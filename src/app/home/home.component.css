@@ -1,0 +1,51 @@
+.top-bar {
+  /* height: 44px; */
+  /* height: 6vh; */
+  /* background-color: var(--pink); */
+  /* font-size: 14px; */
+  /* padding: 1em 0em; */
+  /* padding: 1em 0em !important; */
+}
+
+.group-1 {
+  /* margin-left: 8em !important; */
+  /* width: 100%; */
+  /* margin-left: 6em; */
+  /* justify-content: space-around; */
+}
+
+.group-2 {
+  /* margin-right: 6em;
+  display: flex;
+  width: 100%;
+  justify-content: end; */
+  /* align-items: flex-end; */
+  /* justify-content: end; */
+}
+
+.group-2 option:hover {
+  background-color: red !important;
+}
+
+/* .product-card {
+  color: red;
+} */
+
+.product-card-button-container {
+  transition: visibility 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.product-card {
+  transition: border-radius 0.1s ease-out;
+}
+
+.product-card-container:hover > .product-card-button-container {
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.product-card-container:hover > .product-card {
+  border-radius: 1rem 1rem 0 0;
+}

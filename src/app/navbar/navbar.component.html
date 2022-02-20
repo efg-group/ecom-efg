@@ -1,0 +1,1197 @@
+<div>
+  <swiper
+    #swiperVirtualRef
+    [slidesPerView]="4"
+    [spaceBetween]="50"
+    [pagination]="{ el: 'swiper-pagination', type: 'bullets' }"
+    [virtual]="true"
+    slideActiveClass="swiper-active whyWouldIuseCustomClass"
+    [centeredSlides]="false"
+    [breakpoints]="breakpoints"
+    [navigation]="false"
+    class="mySwiper"
+    id="mySwiperID"
+  >
+    <!-- <ng-template swiperSlide *ngFor="let slide of virtualSlides; index as i">
+      {{ slide }}
+    </ng-template> -->
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../../assets/images/fish1.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-h-full tw-w-full"
+                src="../../assets/images/liver1.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../../assets/images/beef1.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../../assets/images/chicken2.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../../assets/images/fish1.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../../assets/images/fish1.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../../assets/images/fish1.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../../assets/images/fish1.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../../assets/images/fish1.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../../assets/images/fish1.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="tw-flex">
+        <div class="product-card-container tw-w-full">
+          <div
+            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+          >
+            <!-- heart -->
+            <div class="tw-absolute tw-right-4 tw-top-4">
+              <a href="">
+                <img
+                  class="tw-w-4 tw-h-4"
+                  src="../../assets/icons/whislist.svg"
+                />
+              </a>
+            </div>
+            <!-- price-tag -->
+            <div class="tw-absolute tw-top-0 tw-left-0">
+              <div class="tw-relative">
+                <img src="../../assets/icons/priceTag.svg" alt="" />
+                <p
+                  class="tw-absolute tw-top-6 tw-left-1 tw-text-white tw-rotate-[-25deg] tw-text-xs"
+                >
+                  ২৫ টাকা ছাড় !
+                </p>
+              </div>
+            </div>
+            <!-- main-pic -->
+            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../../assets/images/fish1.png"
+              />
+            </div>
+            <!-- description -->
+            <div class="tw-font-medium tw-mt-2 tw-mb-2 tw-text-xs tw-ml-2">
+              <a href=""> Catla Fish processing (Big Size) </a>
+            </div>
+            <!-- price -->
+            <div class="tw-flex tw-text-xs tw-ml-2">
+              <div class="" style="color: var(--navbar-icon-color)">
+                <span class="tw-text">Tk-200/</span
+                ><span class="tw-mr-2">kg</span>
+              </div>
+              <div class="tw-text-gray-500">
+                <span class="tw-line-through">Tk-225/</span
+                ><span class="tw-line-through">kg</span>
+              </div>
+            </div>
+            <!-- starts -->
+            <div class="tw-flex tw-justify-end tw-mr-2 tw-pt-1 tw-pb-3">
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/filledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/halfFilledStar.svg"
+                alt=""
+              />
+              <img
+                class="tw-w-3 tw-h-3 tw-mt-[2px]"
+                src="../../assets/icons/blankStar.svg"
+                alt=""
+              />
+              <span class="tw-text-xs">(25)</span>
+            </div>
+
+            <!-- quantity -->
+            <!-- <div class="">
+          <span class="">Sold:</span>
+          <span class="">450/526</span>
+        </div> -->
+          </div>
+          <!-- card-buttons -->
+          <div
+            class="tw-mx-auto tw--mt-3 product-card-button-container tw-invisible tw-p-2 tw-drop-shadow-lg tw-bg-white tw-opacity-0"
+          >
+            <button
+              class="tw-bg-yellow-300 tw-text-[10px] tw-font-medium tw-w-full tw-my-2 tw-py-[1px] tw-rounded-sm"
+            >
+              View Details
+            </button>
+            <button
+              class="tw-bg-red-600 tw-w-full tw-rounded-md tw-flex tw-text-[12px] tw-justify-center tw-py-1 tw-text-white tw-font-medium"
+            >
+              <p class="tw-mr-2">Add to Cart</p>
+              <img
+                class="tw-h-4 tw-mt-[2px]"
+                src="../../assets/icons/shopping-cart.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+</div>
+<!-- [pagination]="{ type: 'fraction' }" -->

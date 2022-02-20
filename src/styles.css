@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules//swiper/swiper-bundle.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --deep-cove: rgba(13, 14, 67, 1);
+  --violent-violet: rgba(26, 11, 91, 1);
+  --eerie-black: rgba(29, 29, 31, 1);
+  --cloud-burst-2: rgba(33, 48, 90, 0.851);
+  --cloud-burst-3: rgba(33, 48, 90, 0.902);
+  --cloud-burst: rgba(33, 48, 90, 1);
+  --la-palma: rgba(45, 140, 0, 1);
+  --apple: rgba(87, 156, 54, 1);
+  --mid-gray: rgba(88, 93, 105, 1);
+  --chicago: rgba(94, 94, 94, 1);
+  --storm-dust: rgba(100, 100, 100, 1);
+  --storm-gray: rgba(114, 113, 143, 1);
+  --violet-eggplant: rgba(141, 0, 164, 1);
+  --star-dust: rgba(157, 157, 157, 1);
+  --tall-poppy: rgba(184, 30, 37, 1);
+  --tango: rgba(224, 121, 46, 1);
+  --link-water: rgba(231, 228, 248, 1);
+  --zumthor: rgba(239, 244, 255, 1);
+  --titan-white: rgba(241, 240, 255, 1);
+  --black-haze: rgba(245, 246, 248, 1);
+  --supernova: rgba(248, 200, 0, 1);
+  --banana-mania: rgba(250, 230, 181, 1);
+  --red-orange: rgba(254, 58, 48, 1);
+  --west-side: rgba(254, 144, 17, 1);
+  --cotton-candy: rgba(254, 186, 215, 1);
+  --sasquatch-socks: rgba(255, 67, 133, 1);
+  --neon-carrot: rgba(255, 154, 61, 1);
+  --pink: rgba(255, 203, 205, 1);
+  --golden-tainoi: rgba(255, 208, 92, 1);
+  --papaya-whip: rgba(255, 242, 210, 1);
+  --white: rgba(255, 255, 255, 1);
+
+  --font-size-xxs: 10.5px;
+  --font-size-xs: 12px;
+  --font-size-s: 11.9px;
+  --font-size-s: 13.5px;
+  --font-size-m: 14px;
+  --font-size-l: 16px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 24px;
+  --font-size-xxxl: 36px;
+  --font-size-xxxxl: 42px;
+
+  --font-family-inter: "Inter";
+  --font-family-lato: "Lato";
+  --font-family-nunito_sans: "Nunito Sans";
+  --font-family-roboto: "Roboto";
+
+  --navbar-icon-color: #b81e26;
+  --navbar-divider-color: #ff6e6e;
+  --page-background-color: #f1f7ff;
+}
+
+body {
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+}
+
+.swiper {
+  /* padding: 1em; */
+  /* height: 50%; */
+  /* width: 100%; */
+  /* height: 300px; */
+  /* height: 100%; */
+  margin: 10px auto 10px;
+  padding-bottom: 2em;
+}
+
+.swiper-slide {
+  width: 40%;
+  /* background: #b82828; */
+  color: #000;
+  /* text-align: center; */
+  /* line-height: 300px; */
+  border-radius: 30px;
+}

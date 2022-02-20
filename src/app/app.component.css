@@ -1,0 +1,7 @@
+/* :host {
+  --black: #000;
+}
+.btn {
+  background-color: red;
+  background-color: var(--black);
+} */
