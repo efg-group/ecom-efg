@@ -23,6 +23,12 @@
   /* justify-content: end; */
 }
 
+.top-bar {
+  background-image: url("../../assets/images/bg-top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .group-2 option:hover {
   background-color: red !important;
 }

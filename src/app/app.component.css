@@ -5,3 +5,32 @@
   background-color: red;
   background-color: var(--black);
 } */
+
+.top-bar {
+  background-image: url("../assets/images/bg-top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* .miniket-rice {
+  background-image: url("../assets/img/first_bar.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.rice-collection {
+  background-image: url("../assets/images/rice_collection.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.one-hour-delivery {
+  background-image: url("../assets/images/second-curve.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.latest-product {
+  background-image: url("../assets/images/wave.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
