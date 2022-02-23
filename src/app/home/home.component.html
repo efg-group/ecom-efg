@@ -1,6 +1,6 @@
 <!-- top-bar -->
 <div
-  class="tw-text-white"
+  class="tw-text-white tablet:tw-hidden"
   style="background-color: var(--topBar-background-color)"
 >
   <div class="tw-w-10/12 tw-flex tw-justify-between tw-mx-auto tw-py-2">
@@ -54,7 +54,7 @@
 
 <div class="" style="background-color: var(--light-background-color)">
   <!-- navbar -->
-  <div class="tw-shadow-xl">
+  <div class="tw-shadow-xl tablet:tw-hidden">
     <div class="tw-w-10/12 tw-mx-auto">
       <div class="tw-flex tw-justify-between tw-py-4">
         <div class="tw-w-72">
@@ -126,10 +126,39 @@
     </div>
   </div>
 
-  <!-------------------- 
-    top banner section
-  ---------------------->
-  <div class="top-bar tw-h-[210vh] tw-py-5 tw-relative">
+  <!-- tab view navbar -->
+  <div class="tw-shadow-lg md:tw-hidden">
+    <div
+      class="tw-flex tw-justify-between tw-w-10/12 tw-mx-auto tw-h-14 tw-pt-2"
+    >
+      <div>
+        <img class="p-1 tw-w-11" src="../../assets/icons/mb.svg" alt="" />
+      </div>
+      <div class="tw-flex tw-flex-col">
+        <div>
+          <P>&nbsp;</P>
+        </div>
+        <div class="tw-flex tw-items-center">
+          <img class="tw-w-5" src="../../assets/icons/map-pin.svg" alt="" />
+          <h2 class="tw-text-sm tw-mx-1">Mirpur Cantonment, Dhaka</h2>
+          <button type="button">
+            <img
+              class="tw-w-5"
+              src="../../assets/icons/chevron-down.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+      <div>
+        <img src="../../assets/icons/bell.svg" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="bg-fruit tw-h-[210vh] tw-py-5 tw-relative">
+    <!-------------------- 
+      top banner section
+    ---------------------->
     <div
       class="tw-grid tw-h-[70vh] tw-w-10/12 tw-grid-cols-5 tw-grid-rows-2 tw-gap-4 tw-mx-auto"
     >
@@ -399,7 +428,27 @@
     </div>
   </div>
 
-  <div class="wave tw-h-[10vh] tw-mt-[-2vh]"></div>
+  <!-- discount banner  -->
+  <div
+    class="tw-grid tw-grid-cols-2 tw-w-10/12 tw-mx-auto tw-gap-[-2px] tw-mb-9 md:tw-hidden"
+  >
+    <div class="tw-bg-[#6E52A2] tw-h-[30vh] tw-rounded-l-xl tw-p-6">
+      <h1 class="tw-text-2xl tw-text-white tw-font-medium">
+        Up to 70% Discount to all Masala...
+      </h1>
+      <div class="tw-flex tw-items-center tw-mt-5">
+        <a href="" class="tw-text-lg tw-text-white tw-underline"> Shop now </a>
+        <a href=""><img src="../../assets/icons/arrow-right.svg" alt="" /></a>
+      </div>
+    </div>
+    <div class="tw-h-[30vh]">
+      <img
+        class="tw-object-fill tw-w-full tw-h-full"
+        src="../../assets/images/discount-pic.png"
+        alt=""
+      />
+    </div>
+  </div>
 
   <div class="tw-w-10/12 tw-mx-auto">
     <!-- Flash Deals -->

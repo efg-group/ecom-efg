@@ -23,7 +23,7 @@
   /* justify-content: end; */
 }
 
-.top-bar {
+.bg-fruit {
   background-image: url("../../assets/images/top-bar.png");
   background-repeat: no-repeat;
   background-size: cover;
