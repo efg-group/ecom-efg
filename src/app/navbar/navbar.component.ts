@@ -118,10 +118,10 @@ export class NavbarComponent  {
     }
   }
   breakpoints = {
-    360: { slidesPerView: 1.5, spaceBetween: 20 },
-    640: { slidesPerView: 2.5, spaceBetween: 20 },
-    768: { slidesPerView: 3.5, spaceBetween: 10 },
-    1024: { slidesPerView: 4.5, spaceBetween: 20 }
+    360: { slidesPerView: 2, spaceBetween: 20 },
+    640: { slidesPerView: 2, spaceBetween: 20 },
+    768: { slidesPerView: 3.1, spaceBetween: 10 },
+    1024: { slidesPerView: 4.2, spaceBetween: 20 }
   };
 
   slides = Array.from({ length: 5 }).map((el, index) => `Slide ${index + 1}`);
