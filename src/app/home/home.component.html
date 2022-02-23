@@ -52,10 +52,10 @@
   </div>
 </div>
 
-<div class="" style="background-color: var(--page-background-color)">
+<div class="" style="background-color: var(--light-background-color)">
   <!-- navbar -->
   <div class="tw-w-10/12 tw-mx-auto">
-    <div class="tw-flex tw-justify-between tw-py-2">
+    <div class="tw-flex tw-justify-between tw-py-3">
       <div class="tw-w-72">
         <img class="" src="../../assets/icons/masalaBazaarLogo.svg" />
       </div>
@@ -127,7 +127,7 @@
   <!-------------------- 
     top banner section
   ---------------------->
-  <div class="top-bar tw-h-[155vh] tw-py-5">
+  <div class="top-bar tw-h-[220vh] tw-py-5">
     <div
       class="tw-grid tw-h-[70vh] tw-w-10/12 tw-grid-cols-5 tw-grid-rows-2 tw-gap-4 tw-mx-auto"
     >
@@ -140,7 +140,7 @@
           class="tw-w-full tw-h-1/3 tw-bg-[#FF6E6E] tw-top-4 tw-left-4 tw-rounded-t-2xl"
         >
           <p
-            class="tw-px-10 tw-pt-4 tw-text-2xl lg:tw-text-2xl xl:tw-text-3xl tw-font-bold tw-text-white"
+            class="tw-px-10 tw-pt-10 tw-text-2xl lg:tw-text-2xl xl:tw-text-3xl tw-font-bold tw-text-white"
           >
             New Miniket Rice Collection
           </p>
@@ -203,7 +203,7 @@
 
       <!-- right-side-bottom portion-->
       <div
-        class="object-fill tw-col-span-2 tw-text-white tw-relative card-delivery"
+        class="tw-object-fill tw-col-span-2 tw-text-white tw-relative card-delivery"
       >
         <!-- second curve svg -->
         <img
@@ -236,9 +236,131 @@
       </div>
     </div>
 
+    <!-- category section -->
+    <div class="tw-w-10/12 tw-mx-auto tw-text-2xl tw-mt-14">
+      <h1
+        class="tw-font-bold tw-text-3xl"
+        style="color: var(--secondary-brand-color)"
+      >
+        Shop By Categories
+      </h1>
+      <!-- see all button -->
+      <div
+        class="tw-flex tw-justify-end tw-underline tw-mt-6 tw-text-base tw-hidden"
+      >
+        <a href="" class="" style="color: var(--navbar-icon-color)">See All</a>
+      </div>
+      <!-- swiper -->
+      <div class="tw-mt-12">
+        <swiper
+          #swiperVirtualRef
+          [slidesPerView]="4"
+          [spaceBetween]="50"
+          [pagination]="{ el: 'swiper-pagination', type: 'bullets' }"
+          [virtual]="true"
+          slideActiveClass="swiper-active whyWouldIuseCustomClass"
+          [centeredSlides]="false"
+          [breakpoints]="breakpoints"
+          [navigation]="false"
+          class="mySwiper"
+          id="mySwiperID"
+        >
+          <ng-template swiperSlide>
+            <div
+              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+            >
+              <h2 class="tw-absolute tw-top-6 tw-left-7">Shrimp</h2>
+              <img
+                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                src="../../assets/images/masalItems.png"
+                alt=""
+              />
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div
+              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+            >
+              <h2 class="tw-absolute tw-top-6 tw-left-7">Fish & Meat</h2>
+              <img
+                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                src="../../assets/images/fish&meat.png"
+                alt=""
+              />
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div
+              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+            >
+              <h2 class="tw-absolute tw-top-6 tw-left-7">Bakery & Pastry</h2>
+              <img
+                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                src="../../assets/images/snacks1.png"
+                alt=""
+              />
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div
+              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+            >
+              <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
+              <img
+                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                src="../../assets/images/fruits1.png"
+                alt=""
+              />
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div
+              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+            >
+              <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
+              <img
+                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                src="../../assets/images/fruits1.png"
+                alt=""
+              />
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div
+              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+            >
+              <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
+              <img
+                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                src="../../assets/images/fruits1.png"
+                alt=""
+              />
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div
+              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+            >
+              <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
+              <img
+                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                src="../../assets/images/fruits1.png"
+                alt=""
+              />
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+    </div>
+
     <!-- Latest Products -->
     <div class="tw-w-10/12 tw-mx-auto tw-pt-10">
-      <h1 class="tw-text-2xl tw-font-bold">Latest Products</h1>
+      <h1
+        class="tw-font-bold tw-text-3xl"
+        style="color: var(--secondary-brand-color)"
+      >
+        Latest Products
+      </h1>
 
       <!-- button-group -->
       <div class="tw-my-4 tw-font-semibold tw-mt-10">
@@ -278,8 +400,13 @@
   <div class="tw-w-10/12 tw-mx-auto">
     <!-- Flash Deals -->
 
-    <div class="">
-      <h1 class="tw-text-2xl tw-font-bold tw-pt-5">Flash Deals</h1>
+    <div class="tw-pt-5">
+      <h1
+        class="tw-font-bold tw-text-3xl"
+        style="color: var(--secondary-brand-color)"
+      >
+        Flash Deals
+      </h1>
 
       <!-- button-group -->
       <div class="tw-my-4 tw-text-lg tw-mt-10">
@@ -292,25 +419,25 @@
             <p class="tw-mx-2">Offer ends in:</p>
           </span>
           <p
-            class="tw-px-5 tw-py-3 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
+            class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
             style="background-color: var(--navbar-icon-color)"
           >
             <strong>15</strong>&nbsp;<small>days</small>
           </p>
           <p
-            class="tw-px-5 tw-py-3 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
+            class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
             style="background-color: var(--navbar-icon-color)"
           >
             <strong>05</strong>&nbsp;<small>hours</small>
           </p>
           <p
-            class="tw-px-5 tw-py-3 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
+            class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
             style="background-color: var(--navbar-icon-color)"
           >
             <strong>25</strong>&nbsp;<small>minutes</small>
           </p>
           <p
-            class="tw-px-5 tw-py-3 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
+            class="tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
             style="background-color: var(--navbar-icon-color)"
           >
             <strong>25</strong>&nbsp;<small>seconds</small>
@@ -328,8 +455,13 @@
 
     <!-- Trending Products -->
 
-    <div class="">
-      <h1 class="tw-text-2xl tw-font-bold tw-pt-5">Trending Products</h1>
+    <div class="tw-pt-5">
+      <h1
+        class="tw-font-bold tw-text-3xl"
+        style="color: var(--secondary-brand-color)"
+      >
+        Trending Products
+      </h1>
 
       <div
         class="my-4 tw-pb-2 tw-grid mini:tw-grid-cols-1 mobile:tw-grid-cols-2 tw-grid-cols-4 tw-gap-4 tw-justify-items-center"
@@ -729,6 +861,24 @@
       </div>
     </div>
 
+    <!-- Recommended Products -->
+
+    <div class="tw-pt-5 tw-mt-12">
+      <h1
+        class="tw-font-bold tw-text-3xl"
+        style="color: var(--secondary-brand-color)"
+      >
+        Recommended for You
+      </h1>
+
+      <!-- see all button -->
+      <div class="tw-flex tw-justify-end tw-underline tw-mt-6">
+        <a href="" class="" style="color: var(--navbar-icon-color)">See All</a>
+      </div>
+      <!-- card-group -->
+      <app-navbar></app-navbar>
+    </div>
+
     <!-- our partners -->
     <div
       class="tw-flex tw-w-3/4 lg:tw-w-11/12 tw-justify-evenly lg:tw-justify-around tw-py-20 tw-mx-auto"
@@ -977,3 +1127,14 @@
     </div>
   </div>
 </div>
+
+<button class="tw-bg-red-500 tw-px-4 tw-py-3" (click)="handleHeroName()">
+  Click Me
+</button>
+
+<div class="tw-w-40 tw-bg-yellow-500 tw-h-40" *ngIf="hero; else not">
+  Sabbir
+</div>
+<ng-template #not>
+  <p>Not Sabbir</p>
+</ng-template>
