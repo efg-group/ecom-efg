@@ -1,6 +1,6 @@
 <!-- top-bar -->
 <div
-  class="tw-text-white"
+  class="tw-text-white tablet:tw-hidden"
   style="background-color: var(--topBar-background-color)"
 >
   <div class="tw-w-10/12 tw-flex tw-justify-between tw-mx-auto tw-py-2">
@@ -54,7 +54,7 @@
 
 <div class="" style="background-color: var(--light-background-color)">
   <!-- navbar -->
-  <div class="tw-shadow-xl">
+  <div class="tw-shadow-xl tablet:tw-hidden">
     <div class="tw-w-10/12 tw-mx-auto">
       <div class="tw-flex tw-justify-between tw-py-4">
         <div class="tw-w-72">
@@ -127,1112 +127,1185 @@
   </div>
 
   <div class="bg-fruit tw-h-[210vh] tw-py-5 tw-relative tablet:tw-h-[170vh]">
-    <!-------------------- 
+    <!-- tab view navbar -->
+    <div class="tw-shadow-lg md:tw-hidden">
+      <div
+        class="tw-flex tw-justify-between tw-w-10/12 tw-mx-auto tw-h-14 tw-pt-2"
+      >
+        <div>
+          <img class="p-1 tw-w-11" src="../../assets/icons/mb.svg" alt="" />
+        </div>
+        <div class="tw-flex tw-flex-col">
+          <div>
+            <P>&nbsp;</P>
+          </div>
+          <div class="tw-flex tw-items-center">
+            <img class="tw-w-5" src="../../assets/icons/map-pin.svg" alt="" />
+            <h2 class="tw-text-sm tw-mx-1">Mirpur Cantonment, Dhaka</h2>
+            <button type="button">
+              <img
+                class="tw-w-5"
+                src="../../assets/icons/chevron-down.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="../../assets/icons/bell.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="bg-fruit tw-h-[210vh] tw-py-5 tw-relative">
+      <!-------------------- 
       top banner section
     ---------------------->
-    <div
-      class="tw-grid tw-h-[70vh] tw-w-10/12 tw-grid-cols-5 tw-grid-rows-2 tw-gap-4 tw-mx-auto tablet:tw-hidden"
-    >
-      <!-- left slide -->
       <div
-        class="object-fill tw-h-full tw-row-span-2 tw-col-span-3 miniket-rice"
+        class="tw-grid tw-h-[70vh] tw-w-10/12 tw-grid-cols-5 tw-grid-rows-2 tw-gap-4 tw-mx-auto tablet:tw-hidden"
       >
-        <!-- writings -->
+        <!-- left slide -->
         <div
-          class="tw-w-full tw-h-1/3 tw-bg-[#FF6E6E] tw-top-4 tw-left-4 tw-rounded-t-2xl"
+          class="object-fill tw-h-full tw-row-span-2 tw-col-span-3 miniket-rice"
         >
-          <p
-            class="tw-px-10 tw-pt-10 tw-text-2xl lg:tw-text-2xl xl:tw-text-3xl tw-font-bold tw-text-white"
+          <!-- writings -->
+          <div
+            class="tw-w-full tw-h-1/3 tw-bg-[#FF6E6E] tw-top-4 tw-left-4 tw-rounded-t-2xl"
           >
-            New Miniket Rice Collection
-          </p>
-          <p
-            class="tw-pl-10 tw-pr-5 tw-text-sm xl:tw-text-[1.2rem] tw-pt-4 tw-text-white"
-          >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            fugit repellendus exercitationem reprehenderit, quisquam hic
-            molestias!
-          </p>
-        </div>
-        <!-- first pic -->
-        <div class="tw-h-2/3 tw-relative">
-          <img
-            class="tw-object-fill tw-h-full tw-w-full"
-            src="../assets/images/first-curve-pic.png"
-            alt=""
-          />
-          <!-- first curve -->
-          <div class="tw-top-0 tw-absolute tw-w-full">
+            <p
+              class="tw-px-10 tw-pt-10 tw-text-2xl lg:tw-text-2xl xl:tw-text-3xl tw-font-bold tw-text-white"
+            >
+              New Miniket Rice Collection
+            </p>
+            <p
+              class="tw-pl-10 tw-pr-5 tw-text-sm xl:tw-text-[1.2rem] tw-pt-4 tw-text-white"
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique fugit repellendus exercitationem reprehenderit, quisquam
+              hic molestias!
+            </p>
+          </div>
+          <!-- first pic -->
+          <div class="tw-h-2/3 tw-relative">
             <img
-              class="tw-w-full tw-h-full"
-              src="../assets/icons/first-curve (2).svg"
+              class="tw-object-fill tw-h-full tw-w-full"
+              src="../assets/images/first-curve-pic.png"
               alt=""
             />
-          </div>
-        </div>
-      </div>
-
-      <!-- right-side-top portion-->
-      <div
-        class="object-fill tw-col-span-2 tw-relative rice-collection tw-h-full"
-      >
-        <!-- rice collection pic -->
-        <img
-          class="object-fill tw-h-full tw-w-full"
-          src="../assets/images/rice_collection.png"
-          alt=""
-        />
-        <!-- writings  -->
-        <div class="tw-absolute tw-top-10 tw-ml-10">
-          <p class="tw-text-red-500 tw-font-semibold">Best Rice For You....</p>
-        </div>
-        <div
-          class="tw-w-[40vw] tw-absolute tw-top-16 tw-ml-10 tw-font-semibold xl:tw-text-[26px] lg:tw-text-lg"
-        >
-          <p class="">New Miniket Rice Collection</p>
-        </div>
-        <div
-          class="tw-absolute tw-bottom-6 tw-ml-10 tw-text-[#5F5F5F] tw-w-[15vw] tw-text-xs xl:tw-bottom-10"
-        >
-          <p class="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-            Dicta libero impedit et ducimus, <br />
-          </p>
-        </div>
-      </div>
-
-      <!-- right-side-bottom portion-->
-      <div
-        class="tw-object-fill tw-col-span-2 tw-text-white tw-relative card-delivery"
-      >
-        <!-- second curve svg -->
-        <img
-          class="object-fill tw-h-full tw-w-full"
-          src="../assets/images/second-curve.png"
-          alt=""
-        />
-        <!-- writings -->
-        <div class="tw-absolute tw-top-4 tw-right-[20%] tw-font-semibold">
-          <h2 class="tw-my-1 xl:tw-text-3xl lg:tw-text-2xl">
-            1 Hour Delivery...!!!
-          </h2>
-          <h2 class="xl:tw-text-2xl lg:tw-text-xl">ডেলিভারি মাত্র ১ ঘন্টায়</h2>
-        </div>
-        <div class="tw-absolute tw-bottom-16 tw-left-[10%]">
-          <h2 class="tw-mb-2 xl:tw-text-3xl tw-font-semibold lg:tw-text-2xl">
-            Our Store
-          </h2>
-          <h2 class="xl:tw-text-xl lg:tw-text-base">
-            Everything is ready to Delivery...
-          </h2>
-        </div>
-
-        <!-- svg icon -->
-        <img
-          class="tw-absolute tw-w-2/5 xl:tw-w-1/3 lg:tw-top-[10%] lg:tw-w-1/3 xl:tw-top-0 tw-top-[10%] tw-right-[-5vw]"
-          src="../assets/icons/cart-bag.svg"
-          alt=""
-        />
-      </div>
-    </div>
-
-    <!-- tab: top banner section -->
-
-    <!-- swiper -->
-    <div class="tw-mt-12 md:tw-hidden">
-      <swiper
-        #swiperVirtualRef
-        [slidesPerView]="1"
-        [spaceBetween]="50"
-        [centeredSlides]="false"
-        class="mySwiper1 tw-p-12"
-        id="mySwiperID"
-      >
-        <ng-template swiperSlide>
-          <div
-            class="tw-h-[35vh] tw-drop-shadow-lg tw-rounded-2xl tw-text-white showcase-card-bg"
-          >
-            <div
-              class="tw-relative tw-h-full tw-w-1/2 tw-rounded-tl-2xl tw-rounded-bl-2xl tw-rounded-r-[150px]"
-              style="background-color: var(--offers-color)"
-            >
-              <h2
-                class="tw-absolute tw-text-xl tw-font-bold tw-top-8 tw-left-4 tw-w-[80%] mobile:tw-w-[85%] mobile:tw-text-base mini:tw-text-sm"
-              >
-                পদ্মার ইলিশ এখন আপনার হাতের পাশে...
-              </h2>
-              <p
-                class="tw-absolute tw-top-28 tw-left-4 mobile:tw-top-24 mini:tw-top-20"
-              >
-                12th Apr- 20th jun
-              </p>
-              <a
-                href=""
-                class="tw-py-2 tw-px-8 tw-rounded-lg tw-absolute tw-bottom-4 tw-left-16 mobile:tw-px-4 mobile:tw-left-12 mobile:tw-bottom-8 mini:tw-bottom-12"
-                style="background-color: var(--primary-brand-color)"
-                >Shop Now</a
-              >
+            <!-- first curve -->
+            <div class="tw-top-0 tw-absolute tw-w-full">
+              <img
+                class="tw-w-full tw-h-full"
+                src="../assets/icons/first-curve (2).svg"
+                alt=""
+              />
             </div>
           </div>
-        </ng-template>
-        <ng-template swiperSlide>
-          <div
-            class="tw-h-[35vh] tw-drop-shadow-lg tw-rounded-2xl tw-text-white showcase-card-bg"
-          >
-            <div
-              class="tw-relative tw-h-full tw-w-1/2 tw-rounded-tl-2xl tw-rounded-bl-2xl tw-rounded-r-[150px]"
-              style="background-color: var(--secondary-brand-color)"
-            >
-              <h2
-                class="tw-absolute tw-text-xl tw-font-bold tw-top-8 tw-left-4 tw-w-[80%] mobile:tw-w-[85%] mobile:tw-text-base mini:tw-text-sm"
-              >
-                All Snacks up to 70% Discount
-              </h2>
-              <p
-                class="tw-absolute tw-top-28 tw-left-4 mobile:tw-top-24 mini:tw-top-20"
-              >
-                12th Apr- 20th jun
-              </p>
-              <a
-                href=""
-                class="tw-py-2 tw-px-8 tw-rounded-lg tw-absolute tw-bottom-4 tw-left-16 mobile:tw-px-4 mobile:tw-left-12 mobile:tw-bottom-8 mini:tw-bottom-12"
-                style="background-color: var(--primary-brand-color)"
-                >Shop Now</a
-              >
-            </div>
-          </div>
-        </ng-template>
-      </swiper>
-    </div>
+        </div>
 
-    <!-- category section -->
-    <div class="tw-w-10/12 tw-mx-auto tw-text-2xl tw-mt-14">
-      <div class="tw-flex tw-justify-between tw-mb-6 tw-items-center">
-        <h1
-          class="tw-font-bold tw-text-3xl"
-          style="color: var(--secondary-brand-color)"
-        >
-          Shop By Categories
-        </h1>
-        <!-- see all button -->
+        <!-- right-side-top portion-->
         <div
-          class="tw-flex tw-text-base tw-justify-end tw-underline md:tw-hidden"
+          class="object-fill tw-col-span-2 tw-relative rice-collection tw-h-full"
         >
-          <a href="" class="" style="color: var(--primary-brand-color)"
-            >See All</a
+          <!-- rice collection pic -->
+          <img
+            class="object-fill tw-h-full tw-w-full"
+            src="../assets/images/rice_collection.png"
+            alt=""
+          />
+          <!-- writings  -->
+          <div class="tw-absolute tw-top-10 tw-ml-10">
+            <p class="tw-text-red-500 tw-font-semibold">
+              Best Rice For You....
+            </p>
+          </div>
+          <div
+            class="tw-w-[40vw] tw-absolute tw-top-16 tw-ml-10 tw-font-semibold xl:tw-text-[26px] lg:tw-text-lg"
           >
+            <p class="">New Miniket Rice Collection</p>
+          </div>
+          <div
+            class="tw-absolute tw-bottom-6 tw-ml-10 tw-text-[#5F5F5F] tw-w-[15vw] tw-text-xs xl:tw-bottom-10"
+          >
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Dicta libero impedit et ducimus, <br />
+            </p>
+          </div>
+        </div>
+
+        <!-- right-side-bottom portion-->
+        <div
+          class="tw-object-fill tw-col-span-2 tw-text-white tw-relative card-delivery"
+        >
+          <!-- second curve svg -->
+          <img
+            class="object-fill tw-h-full tw-w-full"
+            src="../assets/images/second-curve.png"
+            alt=""
+          />
+          <!-- writings -->
+          <div class="tw-absolute tw-top-4 tw-right-[20%] tw-font-semibold">
+            <h2 class="tw-my-1 xl:tw-text-3xl lg:tw-text-2xl">
+              1 Hour Delivery...!!!
+            </h2>
+            <h2 class="xl:tw-text-2xl lg:tw-text-xl">
+              ডেলিভারি মাত্র ১ ঘন্টায়
+            </h2>
+          </div>
+          <div class="tw-absolute tw-bottom-16 tw-left-[10%]">
+            <h2 class="tw-mb-2 xl:tw-text-3xl tw-font-semibold lg:tw-text-2xl">
+              Our Store
+            </h2>
+            <h2 class="xl:tw-text-xl lg:tw-text-base">
+              Everything is ready to Delivery...
+            </h2>
+          </div>
+
+          <!-- svg icon -->
+          <img
+            class="tw-absolute tw-w-2/5 xl:tw-w-1/3 lg:tw-top-[10%] lg:tw-w-1/3 xl:tw-top-0 tw-top-[10%] tw-right-[-5vw]"
+            src="../assets/icons/cart-bag.svg"
+            alt=""
+          />
         </div>
       </div>
 
-      <!-- see all button -->
-      <div
-        class="tw-flex tw-justify-end tw-underline tw-mt-6 tw-text-base tablet:tw-hidden"
-      >
-        <a href="" class="" style="color: var(--primary-brand-color)"
-          >See All</a
-        >
-      </div>
+      <!-- tab: top banner section -->
+
       <!-- swiper -->
-      <div class="tw-mt-12">
+      <div class="tw-mt-12 md:tw-hidden">
         <swiper
           #swiperVirtualRef
-          [slidesPerView]="4"
+          [slidesPerView]="1"
           [spaceBetween]="50"
-          [pagination]="{ el: 'swiper-pagination', type: 'bullets' }"
-          [virtual]="true"
-          slideActiveClass="swiper-active whyWouldIuseCustomClass"
           [centeredSlides]="false"
-          [breakpoints]="breakpoints"
-          [navigation]="false"
-          class="mySwiper"
+          class="mySwiper1 tw-p-12"
           id="mySwiperID"
         >
           <ng-template swiperSlide>
             <div
-              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+              class="tw-h-[35vh] tw-drop-shadow-lg tw-rounded-2xl tw-text-white showcase-card-bg"
             >
-              <h2 class="tw-absolute tw-top-6 tw-left-7">Shrimp</h2>
-              <img
-                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
-                src="../../assets/images/masalItems.png"
-                alt=""
-              />
+              <div
+                class="tw-relative tw-h-full tw-w-1/2 tw-rounded-tl-2xl tw-rounded-bl-2xl tw-rounded-r-[150px]"
+                style="background-color: var(--offers-color)"
+              >
+                <h2
+                  class="tw-absolute tw-text-xl tw-font-bold tw-top-8 tw-left-4 tw-w-[80%] mobile:tw-w-[85%] mobile:tw-text-base mini:tw-text-sm"
+                >
+                  পদ্মার ইলিশ এখন আপনার হাতের পাশে...
+                </h2>
+                <p
+                  class="tw-absolute tw-top-28 tw-left-4 mobile:tw-top-24 mini:tw-top-20"
+                >
+                  12th Apr- 20th jun
+                </p>
+                <a
+                  href=""
+                  class="tw-py-2 tw-px-8 tw-rounded-lg tw-absolute tw-bottom-4 tw-left-16 mobile:tw-px-4 mobile:tw-left-12 mobile:tw-bottom-8 mini:tw-bottom-12"
+                  style="background-color: var(--primary-brand-color)"
+                  >Shop Now</a
+                >
+              </div>
             </div>
           </ng-template>
           <ng-template swiperSlide>
             <div
-              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+              class="tw-h-[35vh] tw-drop-shadow-lg tw-rounded-2xl tw-text-white showcase-card-bg"
             >
-              <h2 class="tw-absolute tw-top-6 tw-left-7">Fish & Meat</h2>
-              <img
-                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
-                src="../../assets/images/fish&meat.png"
-                alt=""
-              />
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div
-              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
-            >
-              <h2 class="tw-absolute tw-top-6 tw-left-7">Bakery & Pastry</h2>
-              <img
-                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
-                src="../../assets/images/snacks1.png"
-                alt=""
-              />
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div
-              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
-            >
-              <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
-              <img
-                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
-                src="../../assets/images/fruits1.png"
-                alt=""
-              />
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div
-              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
-            >
-              <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
-              <img
-                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
-                src="../../assets/images/fruits1.png"
-                alt=""
-              />
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div
-              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
-            >
-              <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
-              <img
-                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
-                src="../../assets/images/fruits1.png"
-                alt=""
-              />
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div
-              class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
-            >
-              <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
-              <img
-                class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
-                src="../../assets/images/fruits1.png"
-                alt=""
-              />
+              <div
+                class="tw-relative tw-h-full tw-w-1/2 tw-rounded-tl-2xl tw-rounded-bl-2xl tw-rounded-r-[150px]"
+                style="background-color: var(--secondary-brand-color)"
+              >
+                <h2
+                  class="tw-absolute tw-text-xl tw-font-bold tw-top-8 tw-left-4 tw-w-[80%] mobile:tw-w-[85%] mobile:tw-text-base mini:tw-text-sm"
+                >
+                  All Snacks up to 70% Discount
+                </h2>
+                <p
+                  class="tw-absolute tw-top-28 tw-left-4 mobile:tw-top-24 mini:tw-top-20"
+                >
+                  12th Apr- 20th jun
+                </p>
+                <a
+                  href=""
+                  class="tw-py-2 tw-px-8 tw-rounded-lg tw-absolute tw-bottom-4 tw-left-16 mobile:tw-px-4 mobile:tw-left-12 mobile:tw-bottom-8 mini:tw-bottom-12"
+                  style="background-color: var(--primary-brand-color)"
+                  >Shop Now</a
+                >
+              </div>
             </div>
           </ng-template>
         </swiper>
       </div>
-    </div>
 
-    <!-- Latest Products -->
-    <div class="tw-w-10/12 tw-mx-auto tw-pt-10">
-      <div class="tw-flex tw-justify-between tw-mb-6 tw-items-center">
-        <h1
-          class="tw-font-bold tw-text-3xl"
-          style="color: var(--secondary-brand-color)"
-        >
-          Latest Products
-        </h1>
+      <!-- category section -->
+      <div class="tw-w-10/12 tw-mx-auto tw-text-2xl tw-mt-14">
+        <div class="tw-flex tw-justify-between tw-mb-6 tw-items-center">
+          <h1
+            class="tw-font-bold tw-text-3xl"
+            style="color: var(--secondary-brand-color)"
+          >
+            Shop By Categories
+          </h1>
+          <!-- see all button -->
+          <div
+            class="tw-flex tw-text-base tw-justify-end tw-underline md:tw-hidden"
+          >
+            <a href="" class="" style="color: var(--primary-brand-color)"
+              >See All</a
+            >
+          </div>
+        </div>
+
         <!-- see all button -->
-        <div class="tw-flex tw-justify-end tw-underline md:tw-hidden">
+        <div
+          class="tw-flex tw-justify-end tw-underline tw-mt-6 tw-text-base tablet:tw-hidden"
+        >
           <a href="" class="" style="color: var(--primary-brand-color)"
             >See All</a
           >
         </div>
+        <!-- swiper -->
+        <div class="tw-mt-12">
+          <swiper
+            #swiperVirtualRef
+            [slidesPerView]="4"
+            [spaceBetween]="50"
+            [pagination]="{ el: 'swiper-pagination', type: 'bullets' }"
+            [virtual]="true"
+            slideActiveClass="swiper-active whyWouldIuseCustomClass"
+            [centeredSlides]="false"
+            [breakpoints]="breakpoints"
+            [navigation]="false"
+            class="mySwiper"
+            id="mySwiperID"
+          >
+            <ng-template swiperSlide>
+              <div
+                class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+              >
+                <h2 class="tw-absolute tw-top-6 tw-left-7">Shrimp</h2>
+                <img
+                  class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                  src="../../assets/images/masalItems.png"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div
+                class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+              >
+                <h2 class="tw-absolute tw-top-6 tw-left-7">Fish & Meat</h2>
+                <img
+                  class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                  src="../../assets/images/fish&meat.png"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div
+                class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+              >
+                <h2 class="tw-absolute tw-top-6 tw-left-7">Bakery & Pastry</h2>
+                <img
+                  class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                  src="../../assets/images/snacks1.png"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div
+                class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+              >
+                <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
+                <img
+                  class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                  src="../../assets/images/fruits1.png"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div
+                class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+              >
+                <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
+                <img
+                  class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                  src="../../assets/images/fruits1.png"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div
+                class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+              >
+                <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
+                <img
+                  class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                  src="../../assets/images/fruits1.png"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div
+                class="tw-bg-[#646464] tw-h-[25vh] tw-relative tw-drop-shadow-lg tw-rounded-2xl tw-text-white"
+              >
+                <h2 class="tw-absolute tw-top-6 tw-left-7">Fruits</h2>
+                <img
+                  class="tw-absolute tw-right-0 tw-bottom-0 tw-object-fill"
+                  src="../../assets/images/fruits1.png"
+                  alt=""
+                />
+              </div>
+            </ng-template>
+          </swiper>
+        </div>
       </div>
 
-      <!-- button-group -->
-      <div class="tw-my-4 tw-font-semibold tw-mt-10 tablet:tw-hidden">
-        <ul>
-          <a
-            href=""
-            class="tw-px-5 tw-py-3 tw-mr-5 tw-bg-white tw-rounded-lg hover:tw-bg-yellow-400"
-            >New Arrival</a
+      <!-- Latest Products -->
+      <div class="tw-w-10/12 tw-mx-auto tw-pt-10">
+        <div class="tw-flex tw-justify-between tw-mb-6 tw-items-center">
+          <h1
+            class="tw-font-bold tw-text-3xl"
+            style="color: var(--secondary-brand-color)"
           >
-          <a
-            href=""
-            class="tw-px-5 tw-py-3 tw-mr-5 tw-bg-white tw-rounded-lg hover:tw-bg-yellow-400"
-            >Best Sell</a
-          >
-          <a
-            href=""
-            class="tw-px-5 tw-py-3 tw-mr-5 tw-bg-white tw-rounded-lg hover:tw-bg-yellow-400"
-            >Featured</a
-          >
-          <a
-            href=""
-            class="tw-px-5 tw-py-3 tw-mr-5 tw-bg-white tw-rounded-lg hover:tw-bg-yellow-400"
-            >Special Offer</a
-          >
-        </ul>
-      </div>
+            Latest Products
+          </h1>
+          <!-- see all button -->
+          <div class="tw-flex tw-justify-end tw-underline md:tw-hidden">
+            <a href="" class="" style="color: var(--primary-brand-color)"
+              >See All</a
+            >
+          </div>
+        </div>
 
-      <!-- see all button -->
-      <div class="tw-flex tw-justify-end tw-underline tw-mt-6 tablet:tw-hidden">
-        <a href="" class="" style="color: var(--primary-brand-color)"
-          >See All</a
+        <!-- button-group -->
+        <div class="tw-my-4 tw-font-semibold tw-mt-10 tablet:tw-hidden">
+          <ul>
+            <a
+              href=""
+              class="tw-px-5 tw-py-3 tw-mr-5 tw-bg-white tw-rounded-lg hover:tw-bg-yellow-400"
+              >New Arrival</a
+            >
+            <a
+              href=""
+              class="tw-px-5 tw-py-3 tw-mr-5 tw-bg-white tw-rounded-lg hover:tw-bg-yellow-400"
+              >Best Sell</a
+            >
+            <a
+              href=""
+              class="tw-px-5 tw-py-3 tw-mr-5 tw-bg-white tw-rounded-lg hover:tw-bg-yellow-400"
+              >Featured</a
+            >
+            <a
+              href=""
+              class="tw-px-5 tw-py-3 tw-mr-5 tw-bg-white tw-rounded-lg hover:tw-bg-yellow-400"
+              >Special Offer</a
+            >
+          </ul>
+        </div>
+
+        <!-- see all button -->
+        <div
+          class="tw-flex tw-justify-end tw-underline tw-mt-6 tablet:tw-hidden"
         >
-      </div>
-      <!-- card-group -->
-      <app-navbar></app-navbar>
-    </div>
-  </div>
-
-  <div class="wave tw-h-[10vh] tw-mt-[-2vh]"></div>
-
-  <div class="tw-w-10/12 tw-mx-auto">
-    <!-- Flash Deals -->
-
-    <div class="tw-pt-2">
-      <h1
-        class="tw-font-bold tw-text-3xl"
-        style="color: var(--secondary-brand-color)"
-      >
-        Flash Deals
-      </h1>
-
-      <!-- button-group -->
-      <div class="tw-my-4 tw-text-lg tw-mt-10">
-        <ul class="tw-flex tw-justify-end">
-          <span
-            class="tw-flex tw-items-center tw-text-lg"
-            style="color: var(--primary-brand-color)"
+          <a href="" class="" style="color: var(--primary-brand-color)"
+            >See All</a
           >
-            <p class="tw-font-semibold">Hurry Up!</p>
-            <p class="tw-mx-2">Offer ends in:</p>
-          </span>
-          <p
-            class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
-            style="background-color: var(--primary-brand-color)"
-          >
-            <strong>15</strong>&nbsp;<small>days</small>
-          </p>
-          <p
-            class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
-            style="background-color: var(--primary-brand-color)"
-          >
-            <strong>05</strong>&nbsp;<small>hours</small>
-          </p>
-          <p
-            class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
-            style="background-color: var(--primary-brand-color)"
-          >
-            <strong>25</strong>&nbsp;<small>minutes</small>
-          </p>
-          <p
-            class="tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
-            style="background-color: var(--primary-brand-color)"
-          >
-            <strong>25</strong>&nbsp;<small>seconds</small>
-          </p>
-        </ul>
-      </div>
-
-      <!-- see all button -->
-      <div class="tw-flex tw-justify-end tw-underline tw-mt-6">
-        <a href="" class="" style="color: var(--primary-brand-color)"
-          >See All</a
-        >
-      </div>
-      <!-- card-group -->
-      <app-navbar></app-navbar>
-    </div>
-
-    <!-- Trending Products -->
-
-    <div class="tw-pt-5">
-      <h1
-        class="tw-font-bold tw-text-3xl"
-        style="color: var(--secondary-brand-color)"
-      >
-        Trending Products
-      </h1>
-
-      <div
-        class="my-4 tw-pb-2 tw-grid mini:tw-grid-cols-1 mobile:tw-grid-cols-2 tw-grid-cols-4 tw-gap-4 tw-justify-items-center"
-      >
+        </div>
         <!-- card-group -->
-        <!-- card-1 -->
-        <div class="tw-flex">
-          <div
-            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
-          >
-            <!-- heart -->
-            <div class="tw-absolute tw-right-4 tw-top-4">
-              <a href="">
-                <img
-                  class="tw-w-4 tw-h-4"
-                  src="../../assets/icons/whislist.svg"
-                />
-              </a>
-            </div>
-            <!-- main-pic -->
-            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
-              <img
-                class="tw-w-full tw-h-full"
-                src="../../assets/images/chicken1.png"
-              />
-            </div>
-            <!-- description -->
-            <div
-              class="tw-font-semibold tw-my-2 tw-text-[14px] tw-flex tw-justify-center"
-            >
-              <a href=""> Catla Fish processing (Big Size) </a>
-            </div>
-            <!-- price -->
-            <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
-              <div class="" style="color: var(--primary-brand-color)">
-                <span class="tw-text">Tk-200/</span
-                ><span class="tw-mr-2">kg</span>
-              </div>
-              <div class="tw-text-gray-500">
-                <span class="tw-line-through">Tk-225/</span
-                ><span class="tw-line-through">kg</span>
-              </div>
-            </div>
-            <!-- starts -->
-            <div
-              class="tw-flex tw-justify-around tw-w-[50%] tw-mx-auto tw-pt-1 tw-pb-3"
-            >
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/halfFilledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/blankStar.svg"
-                alt=""
-              />
-              <span class="tw-text-xs">(25)</span>
-            </div>
-
-            <!-- quantity -->
-            <!-- <div class="">
-            <span class="">Sold:</span>
-            <span class="">450/526</span>
-          </div> -->
-          </div>
-        </div>
-        <!-- card-1 -->
-        <div class="tw-flex">
-          <div
-            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
-          >
-            <!-- heart -->
-            <div class="tw-absolute tw-right-4 tw-top-4">
-              <a href="">
-                <img
-                  class="tw-w-4 tw-h-4"
-                  src="../../assets/icons/whislist.svg"
-                />
-              </a>
-            </div>
-            <!-- main-pic -->
-            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
-              <img
-                class="tw-w-full tw-h-full"
-                src="../../assets/images/chicken1.png"
-              />
-            </div>
-            <!-- description -->
-            <div
-              class="tw-font-medium tw-my-2 tw-text-xs tw-flex tw-justify-center"
-            >
-              <a href=""> Catla Fish processing (Big Size) </a>
-            </div>
-            <!-- price -->
-            <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
-              <div class="" style="color: var(--primary-brand-color)">
-                <span class="tw-text">Tk-200/</span
-                ><span class="tw-mr-2">kg</span>
-              </div>
-              <div class="tw-text-gray-500">
-                <span class="tw-line-through">Tk-225/</span
-                ><span class="tw-line-through">kg</span>
-              </div>
-            </div>
-            <!-- starts -->
-            <div
-              class="tw-flex tw-justify-around tw-w-[50%] tw-mx-auto tw-pt-1 tw-pb-3"
-            >
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/halfFilledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/blankStar.svg"
-                alt=""
-              />
-              <span class="tw-text-xs">(25)</span>
-            </div>
-
-            <!-- quantity -->
-            <!-- <div class="">
-            <span class="">Sold:</span>
-            <span class="">450/526</span>
-          </div> -->
-          </div>
-        </div>
-        <!-- card-1 -->
-        <div class="tw-flex">
-          <div
-            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
-          >
-            <!-- heart -->
-            <div class="tw-absolute tw-right-4 tw-top-4">
-              <a href="">
-                <img
-                  class="tw-w-4 tw-h-4"
-                  src="../../assets/icons/whislist.svg"
-                />
-              </a>
-            </div>
-            <!-- main-pic -->
-            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
-              <img
-                class="tw-w-full tw-h-full"
-                src="../../assets/images/chicken1.png"
-              />
-            </div>
-            <!-- description -->
-            <div
-              class="tw-font-medium tw-my-2 tw-text-xs tw-flex tw-justify-center"
-            >
-              <a href=""> Catla Fish processing (Big Size) </a>
-            </div>
-            <!-- price -->
-            <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
-              <div class="" style="color: var(--primary-brand-color)">
-                <span class="tw-text">Tk-200/</span
-                ><span class="tw-mr-2">kg</span>
-              </div>
-              <div class="tw-text-gray-500">
-                <span class="tw-line-through">Tk-225/</span
-                ><span class="tw-line-through">kg</span>
-              </div>
-            </div>
-            <!-- starts -->
-            <div
-              class="tw-flex tw-justify-around tw-w-[50%] tw-mx-auto tw-pt-1 tw-pb-3"
-            >
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/halfFilledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/blankStar.svg"
-                alt=""
-              />
-              <span class="tw-text-xs">(25)</span>
-            </div>
-
-            <!-- quantity -->
-            <!-- <div class="">
-            <span class="">Sold:</span>
-            <span class="">450/526</span>
-          </div> -->
-          </div>
-        </div>
-        <!-- card-1 -->
-        <div class="tw-flex">
-          <div
-            class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
-          >
-            <!-- heart -->
-            <div class="tw-absolute tw-right-4 tw-top-4">
-              <a href="">
-                <img
-                  class="tw-w-4 tw-h-4"
-                  src="../../assets/icons/whislist.svg"
-                />
-              </a>
-            </div>
-            <!-- main-pic -->
-            <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
-              <img
-                class="tw-w-full tw-h-full"
-                src="../../assets/images/chicken1.png"
-              />
-            </div>
-            <!-- description -->
-            <div
-              class="tw-font-medium tw-my-2 tw-text-xs tw-flex tw-justify-center"
-            >
-              <a href=""> Catla Fish processing (Big Size) </a>
-            </div>
-            <!-- price -->
-            <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
-              <div class="" style="color: var(--primary-brand-color)">
-                <span class="tw-text">Tk-200/</span
-                ><span class="tw-mr-2">kg</span>
-              </div>
-              <div class="tw-text-gray-500">
-                <span class="tw-line-through">Tk-225/</span
-                ><span class="tw-line-through">kg</span>
-              </div>
-            </div>
-            <!-- starts -->
-            <div
-              class="tw-flex tw-justify-around tw-w-[50%] tw-mx-auto tw-pt-1 tw-pb-3"
-            >
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/filledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/halfFilledStar.svg"
-                alt=""
-              />
-              <img
-                class="tw-w-4 tw-h-4 tw-mt-[5px]"
-                src="../../assets/icons/blankStar.svg"
-                alt=""
-              />
-              <span class="tw-text-xs">(25)</span>
-            </div>
-
-            <!-- quantity -->
-            <!-- <div class="">
-            <span class="">Sold:</span>
-            <span class="">450/526</span>
-          </div> -->
-          </div>
-        </div>
+        <app-navbar></app-navbar>
       </div>
     </div>
 
-    <!-- OFFERS card -->
+    <!-- discount banner  -->
     <div
-      class="tw-grid tw-grid-cols-5 tw-grid-rows-3 tw-mt-10 tw-gap-2 tw-h-[45vh]"
+      class="tw-grid tw-grid-cols-2 tw-w-10/12 tw-mx-auto tw-gap-[-2px] tw-mb-9 md:tw-hidden"
     >
-      <!-- first card  -->
-      <div class="tw-relative tw-row-span-3 tw-col-span-2 tw-drop-shadow-lg">
+      <div class="tw-bg-[#6E52A2] tw-h-[30vh] tw-rounded-l-xl tw-p-6">
+        <h1 class="tw-text-2xl tw-text-white tw-font-medium">
+          Up to 70% Discount to all Masala...
+        </h1>
+        <div class="tw-flex tw-items-center tw-mt-5">
+          <a href="" class="tw-text-lg tw-text-white tw-underline">
+            Shop now
+          </a>
+          <a href=""><img src="../../assets/icons/arrow-right.svg" alt="" /></a>
+        </div>
+      </div>
+      <div class="tw-h-[30vh]">
         <img
-          class="tw-h-full"
-          src="../assets/images/offer-section.png"
+          class="tw-object-fill tw-w-full tw-h-full"
+          src="../../assets/images/discount-pic.png"
           alt=""
         />
-        <div class="tw-absolute tw-top-6 tw-left-6">
-          <h2 class="tw-font-bold tw-italic tw-text-white tw-text-2xl">
-            23% off in all snacks products
-          </h2>
-          <a href=""
-            ><p class="tw-underline tw-text-xl tw-mt-10">Shop Now</p></a
-          >
-        </div>
-      </div>
-      <!-- second card -->
-      <div class="tw-row-span-3 tw-col-span-2 tw-relative tw-drop-shadow-lg">
-        <img
-          class="tw-h-full"
-          src="../assets/images/offer-section2.png"
-          alt=""
-        />
-        <div class="tw-absolute tw-top-6 tw-left-6">
-          <h2 class="tw-font-bold tw-italic tw-text-white tw-text-2xl">
-            23% off in all snacks products
-          </h2>
-          <a href=""
-            ><p class="tw-underline tw-text-xl tw-mt-10">Shop Now</p></a
-          >
-        </div>
-      </div>
-      <!-- snacks card1  -->
-      <div class="tw-flex tw-justify-around tw-items-center tw-drop-shadow-lg">
-        <div class="tw-w-[50%] bg-[#F5F6F8]">
-          <img
-            class="tw-w-full tw-p-2"
-            src="../assets/images/snacks.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <h2>Executive Snacks</h2>
-          <span><del>TK 42</del></span>
-          <span class="tw-ml-2 tw-text-[#B81E25]">TK 32</span>
-        </div>
-      </div>
-      <!-- snacks card2  -->
-      <div class="tw-flex tw-justify-around tw-items-center tw-drop-shadow-lg">
-        <div class="tw-w-[50%] bg-[#F5F6F8]">
-          <img
-            class="tw-wmagesull tw-p-2"
-            src="../assets/images/snacks.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <h2>Executive Snacks</h2>
-          <span><del>TK 42</del></span>
-          <span class="tw-ml-2 tw-text-[#B81E25]">TK 32</span>
-        </div>
-      </div>
-      <!-- snacks card3  -->
-      <div class="tw-flex tw-justify-around tw-items-center tw-drop-shadow-lg">
-        <div class="tw-w-[50%] bg-[#F5F6F8]">
-          <img
-            class="tw-wmagesull tw-p-2"
-            src="../assets/images/snacks.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <h2>Executive Snacks</h2>
-          <span><del>TK 42</del></span>
-          <span class="tw-ml-2 tw-text-[#B81E25]">TK 32</span>
-        </div>
       </div>
     </div>
 
-    <!-- Recommended Products -->
+    <div class="tw-w-10/12 tw-mx-auto">
+      <!-- Flash Deals -->
 
-    <div class="tw-pt-5 tw-mt-12">
-      <h1
-        class="tw-font-bold tw-text-3xl"
-        style="color: var(--secondary-brand-color)"
+      <div class="tw-pt-2">
+        <h1
+          class="tw-font-bold tw-text-3xl"
+          style="color: var(--secondary-brand-color)"
+        >
+          Flash Deals
+        </h1>
+
+        <!-- button-group -->
+        <div class="tw-my-4 tw-text-lg tw-mt-10">
+          <ul class="tw-flex tw-justify-end">
+            <span
+              class="tw-flex tw-items-center tw-text-lg"
+              style="color: var(--primary-brand-color)"
+            >
+              <p class="tw-font-semibold">Hurry Up!</p>
+              <p class="tw-mx-2">Offer ends in:</p>
+            </span>
+            <p
+              class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
+              style="background-color: var(--primary-brand-color)"
+            >
+              <strong>15</strong>&nbsp;<small>days</small>
+            </p>
+            <p
+              class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
+              style="background-color: var(--primary-brand-color)"
+            >
+              <strong>05</strong>&nbsp;<small>hours</small>
+            </p>
+            <p
+              class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
+              style="background-color: var(--primary-brand-color)"
+            >
+              <strong>25</strong>&nbsp;<small>minutes</small>
+            </p>
+            <p
+              class="tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
+              style="background-color: var(--primary-brand-color)"
+            >
+              <strong>25</strong>&nbsp;<small>seconds</small>
+            </p>
+          </ul>
+        </div>
+
+        <!-- see all button -->
+        <div class="tw-flex tw-justify-end tw-underline tw-mt-6">
+          <a href="" class="" style="color: var(--primary-brand-color)"
+            >See All</a
+          >
+        </div>
+        <!-- card-group -->
+        <app-navbar></app-navbar>
+      </div>
+
+      <!-- Trending Products -->
+
+      <div class="tw-pt-5">
+        <h1
+          class="tw-font-bold tw-text-3xl"
+          style="color: var(--secondary-brand-color)"
+        >
+          Trending Products
+        </h1>
+
+        <div
+          class="my-4 tw-pb-2 tw-grid mini:tw-grid-cols-1 mobile:tw-grid-cols-2 tw-grid-cols-4 tw-gap-4 tw-justify-items-center"
+        >
+          <!-- card-group -->
+          <!-- card-1 -->
+          <div class="tw-flex">
+            <div
+              class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+            >
+              <!-- heart -->
+              <div class="tw-absolute tw-right-4 tw-top-4">
+                <a href="">
+                  <img
+                    class="tw-w-4 tw-h-4"
+                    src="../../assets/icons/whislist.svg"
+                  />
+                </a>
+              </div>
+              <!-- main-pic -->
+              <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+                <img
+                  class="tw-w-full tw-h-full"
+                  src="../../assets/images/chicken1.png"
+                />
+              </div>
+              <!-- description -->
+              <div
+                class="tw-font-semibold tw-my-2 tw-text-[14px] tw-flex tw-justify-center"
+              >
+                <a href=""> Catla Fish processing (Big Size) </a>
+              </div>
+              <!-- price -->
+              <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
+                <div class="" style="color: var(--primary-brand-color)">
+                  <span class="tw-text">Tk-200/</span
+                  ><span class="tw-mr-2">kg</span>
+                </div>
+                <div class="tw-text-gray-500">
+                  <span class="tw-line-through">Tk-225/</span
+                  ><span class="tw-line-through">kg</span>
+                </div>
+              </div>
+              <!-- starts -->
+              <div
+                class="tw-flex tw-justify-around tw-w-[50%] tw-mx-auto tw-pt-1 tw-pb-3"
+              >
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/halfFilledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/blankStar.svg"
+                  alt=""
+                />
+                <span class="tw-text-xs">(25)</span>
+              </div>
+
+              <!-- quantity -->
+              <!-- <div class="">
+            <span class="">Sold:</span>
+            <span class="">450/526</span>
+          </div> -->
+            </div>
+          </div>
+          <!-- card-1 -->
+          <div class="tw-flex">
+            <div
+              class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+            >
+              <!-- heart -->
+              <div class="tw-absolute tw-right-4 tw-top-4">
+                <a href="">
+                  <img
+                    class="tw-w-4 tw-h-4"
+                    src="../../assets/icons/whislist.svg"
+                  />
+                </a>
+              </div>
+              <!-- main-pic -->
+              <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+                <img
+                  class="tw-w-full tw-h-full"
+                  src="../../assets/images/chicken1.png"
+                />
+              </div>
+              <!-- description -->
+              <div
+                class="tw-font-medium tw-my-2 tw-text-xs tw-flex tw-justify-center"
+              >
+                <a href=""> Catla Fish processing (Big Size) </a>
+              </div>
+              <!-- price -->
+              <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
+                <div class="" style="color: var(--primary-brand-color)">
+                  <span class="tw-text">Tk-200/</span
+                  ><span class="tw-mr-2">kg</span>
+                </div>
+                <div class="tw-text-gray-500">
+                  <span class="tw-line-through">Tk-225/</span
+                  ><span class="tw-line-through">kg</span>
+                </div>
+              </div>
+              <!-- starts -->
+              <div
+                class="tw-flex tw-justify-around tw-w-[50%] tw-mx-auto tw-pt-1 tw-pb-3"
+              >
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/halfFilledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/blankStar.svg"
+                  alt=""
+                />
+                <span class="tw-text-xs">(25)</span>
+              </div>
+
+              <!-- quantity -->
+              <!-- <div class="">
+            <span class="">Sold:</span>
+            <span class="">450/526</span>
+          </div> -->
+            </div>
+          </div>
+          <!-- card-1 -->
+          <div class="tw-flex">
+            <div
+              class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+            >
+              <!-- heart -->
+              <div class="tw-absolute tw-right-4 tw-top-4">
+                <a href="">
+                  <img
+                    class="tw-w-4 tw-h-4"
+                    src="../../assets/icons/whislist.svg"
+                  />
+                </a>
+              </div>
+              <!-- main-pic -->
+              <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+                <img
+                  class="tw-w-full tw-h-full"
+                  src="../../assets/images/chicken1.png"
+                />
+              </div>
+              <!-- description -->
+              <div
+                class="tw-font-medium tw-my-2 tw-text-xs tw-flex tw-justify-center"
+              >
+                <a href=""> Catla Fish processing (Big Size) </a>
+              </div>
+              <!-- price -->
+              <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
+                <div class="" style="color: var(--primary-brand-color)">
+                  <span class="tw-text">Tk-200/</span
+                  ><span class="tw-mr-2">kg</span>
+                </div>
+                <div class="tw-text-gray-500">
+                  <span class="tw-line-through">Tk-225/</span
+                  ><span class="tw-line-through">kg</span>
+                </div>
+              </div>
+              <!-- starts -->
+              <div
+                class="tw-flex tw-justify-around tw-w-[50%] tw-mx-auto tw-pt-1 tw-pb-3"
+              >
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/halfFilledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/blankStar.svg"
+                  alt=""
+                />
+                <span class="tw-text-xs">(25)</span>
+              </div>
+
+              <!-- quantity -->
+              <!-- <div class="">
+            <span class="">Sold:</span>
+            <span class="">450/526</span>
+          </div> -->
+            </div>
+          </div>
+          <!-- card-1 -->
+          <div class="tw-flex">
+            <div
+              class="tw-bg-white tw-mb-0 tw-relative tw-drop-shadow-lg tw-rounded-2xl product-card"
+            >
+              <!-- heart -->
+              <div class="tw-absolute tw-right-4 tw-top-4">
+                <a href="">
+                  <img
+                    class="tw-w-4 tw-h-4"
+                    src="../../assets/icons/whislist.svg"
+                  />
+                </a>
+              </div>
+              <!-- main-pic -->
+              <div class="tw-mx-auto tw-pt-8 tw-h-[30vh]">
+                <img
+                  class="tw-w-full tw-h-full"
+                  src="../../assets/images/chicken1.png"
+                />
+              </div>
+              <!-- description -->
+              <div
+                class="tw-font-medium tw-my-2 tw-text-xs tw-flex tw-justify-center"
+              >
+                <a href=""> Catla Fish processing (Big Size) </a>
+              </div>
+              <!-- price -->
+              <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
+                <div class="" style="color: var(--primary-brand-color)">
+                  <span class="tw-text">Tk-200/</span
+                  ><span class="tw-mr-2">kg</span>
+                </div>
+                <div class="tw-text-gray-500">
+                  <span class="tw-line-through">Tk-225/</span
+                  ><span class="tw-line-through">kg</span>
+                </div>
+              </div>
+              <!-- starts -->
+              <div
+                class="tw-flex tw-justify-around tw-w-[50%] tw-mx-auto tw-pt-1 tw-pb-3"
+              >
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/filledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/halfFilledStar.svg"
+                  alt=""
+                />
+                <img
+                  class="tw-w-4 tw-h-4 tw-mt-[5px]"
+                  src="../../assets/icons/blankStar.svg"
+                  alt=""
+                />
+                <span class="tw-text-xs">(25)</span>
+              </div>
+
+              <!-- quantity -->
+              <!-- <div class="">
+            <span class="">Sold:</span>
+            <span class="">450/526</span>
+          </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OFFERS card -->
+      <div
+        class="tw-grid tw-grid-cols-5 tw-grid-rows-3 tw-mt-10 tw-gap-2 tw-h-[45vh]"
       >
-        Recommended for You
-      </h1>
-
-      <!-- see all button -->
-      <div class="tw-flex tw-justify-end tw-underline tw-mt-6">
-        <a href="" class="" style="color: var(--primary-brand-color)"
-          >See All</a
-        >
-      </div>
-      <!-- card-group -->
-      <app-navbar></app-navbar>
-    </div>
-
-    <!-- our partners -->
-    <div
-      class="tw-flex tw-w-3/4 lg:tw-w-11/12 tw-justify-evenly lg:tw-justify-around tw-py-20 tw-mx-auto"
-    >
-      <div class="tw-w-16 md:tw-w-28">
-        <img class="tw-wconsull" src="../assets/icons/masala_logo.svg" alt="" />
-      </div>
-      <div class="tw-w-16 md:tw-w-28">
-        <img class="tw-wconsull" src="../assets/icons/zoy_logo.svg" alt="" />
-      </div>
-      <div class="tw-w-16 md:tw-w-28">
-        <img class="tw-wconsull" src="../assets/icons/crown_logo.svg" alt="" />
-      </div>
-      <div class="tw-w-16 md:tw-w-28">
-        <img
-          class="tw-wconsull"
-          src="../assets/icons/Al_Rohim_logo.svg"
-          alt=""
-        />
-      </div>
-    </div>
-
-    <!-- what masala offers -->
-
-    <div>
-      <!-- title -->
-      <h1 class="tw-text-center tw-font-bold tw-text-4xl">
-        What <span class="tw-text-[#B81E25]">Masala</span
-        ><span class="tw-text-[#21305A]">bazaar</span> Offers!
-      </h1>
-      <div class="tw-grid tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-4 tw-py-16">
+        <!-- first card  -->
+        <div class="tw-relative tw-row-span-3 tw-col-span-2 tw-drop-shadow-lg">
+          <img
+            class="tw-h-full"
+            src="../assets/images/offer-section.png"
+            alt=""
+          />
+          <div class="tw-absolute tw-top-6 tw-left-6">
+            <h2 class="tw-font-bold tw-italic tw-text-white tw-text-2xl">
+              23% off in all snacks products
+            </h2>
+            <a href=""
+              ><p class="tw-underline tw-text-xl tw-mt-10">Shop Now</p></a
+            >
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="tw-row-span-3 tw-col-span-2 tw-relative tw-drop-shadow-lg">
+          <img
+            class="tw-h-full"
+            src="../assets/images/offer-section2.png"
+            alt=""
+          />
+          <div class="tw-absolute tw-top-6 tw-left-6">
+            <h2 class="tw-font-bold tw-italic tw-text-white tw-text-2xl">
+              23% off in all snacks products
+            </h2>
+            <a href=""
+              ><p class="tw-underline tw-text-xl tw-mt-10">Shop Now</p></a
+            >
+          </div>
+        </div>
+        <!-- snacks card1  -->
         <div
-          class="tw-flex tw-p-4 tw-justify-center tw-items-center tw-flex-col tw-drop-shadow-lg tw-rounded-md tw-bg-white"
+          class="tw-flex tw-justify-around tw-items-center tw-drop-shadow-lg"
         >
-          <div>
+          <div class="tw-w-[50%] bg-[#F5F6F8]">
             <img
-              class="tw-wcons2"
-              src="../assets/icons/free-delivery 1.svg"
+              class="tw-w-full tw-p-2"
+              src="../assets/images/snacks.png"
               alt=""
             />
           </div>
-          <h2 class="tw-font-bold tw-text-xl tw-py-5">24/7 Support</h2>
-          <p class="tw-text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur, impedit.
-          </p>
-        </div>
-        <div
-          class="tw-flex tw-p-4 tw-justify-center tw-items-center tw-flex-col tw-drop-shadow-lg tw-rounded-md tw-bg-white"
-        >
           <div>
+            <h2>Executive Snacks</h2>
+            <span><del>TK 42</del></span>
+            <span class="tw-ml-2 tw-text-[#B81E25]">TK 32</span>
+          </div>
+        </div>
+        <!-- snacks card2  -->
+        <div
+          class="tw-flex tw-justify-around tw-items-center tw-drop-shadow-lg"
+        >
+          <div class="tw-w-[50%] bg-[#F5F6F8]">
             <img
-              class="tw-wcons2"
-              src="../assets/icons/cashback 1.svg"
+              class="tw-wmagesull tw-p-2"
+              src="../assets/images/snacks.png"
               alt=""
             />
           </div>
-          <h2 class="tw-font-bold tw-text-xl tw-py-5">24/7 Support</h2>
-          <p class="tw-text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur, impedit.
-          </p>
-        </div>
-        <div
-          class="tw-flex tw-p-4 tw-justify-center tw-items-center tw-flex-col tw-drop-shadow-lg tw-rounded-md tw-bg-white"
-        >
           <div>
+            <h2>Executive Snacks</h2>
+            <span><del>TK 42</del></span>
+            <span class="tw-ml-2 tw-text-[#B81E25]">TK 32</span>
+          </div>
+        </div>
+        <!-- snacks card3  -->
+        <div
+          class="tw-flex tw-justify-around tw-items-center tw-drop-shadow-lg"
+        >
+          <div class="tw-w-[50%] bg-[#F5F6F8]">
             <img
-              class="tw-w-12"
-              src="../assets/icons/premium-quality 1.svg"
+              class="tw-wmagesull tw-p-2"
+              src="../assets/images/snacks.png"
               alt=""
             />
           </div>
-          <h2 class="tw-font-bold tw-text-xl tw-py-5">24/7 Support</h2>
-          <p class="tw-text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur, impedit.
-          </p>
-        </div>
-        <div
-          class="tw-flex tw-p-4 tw-justify-center tw-items-center tw-flex-col tw-drop-shadow-lg tw-rounded-md tw-bg-white"
-        >
           <div>
-            <img
-              class="tw-w-12"
-              src="../assets/icons/24-hours-support 1.svg"
-              alt=""
-            />
+            <h2>Executive Snacks</h2>
+            <span><del>TK 42</del></span>
+            <span class="tw-ml-2 tw-text-[#B81E25]">TK 32</span>
           </div>
-          <h2 class="tw-font-bold tw-text-xl tw-py-5">24/7 Support</h2>
-          <p class="tw-text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequatur, impedit.
-          </p>
         </div>
       </div>
-    </div>
 
-    <!--------------------
+      <!-- Recommended Products -->
+
+      <div class="tw-pt-5 tw-mt-12">
+        <h1
+          class="tw-font-bold tw-text-3xl"
+          style="color: var(--secondary-brand-color)"
+        >
+          Recommended for You
+        </h1>
+
+        <!-- see all button -->
+        <div class="tw-flex tw-justify-end tw-underline tw-mt-6">
+          <a href="" class="" style="color: var(--primary-brand-color)"
+            >See All</a
+          >
+        </div>
+        <!-- card-group -->
+        <app-navbar></app-navbar>
+      </div>
+
+      <!-- our partners -->
+      <div
+        class="tw-flex tw-w-3/4 lg:tw-w-11/12 tw-justify-evenly lg:tw-justify-around tw-py-20 tw-mx-auto"
+      >
+        <div class="tw-w-16 md:tw-w-28">
+          <img
+            class="tw-wconsull"
+            src="../assets/icons/masala_logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="tw-w-16 md:tw-w-28">
+          <img class="tw-wconsull" src="../assets/icons/zoy_logo.svg" alt="" />
+        </div>
+        <div class="tw-w-16 md:tw-w-28">
+          <img
+            class="tw-wconsull"
+            src="../assets/icons/crown_logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="tw-w-16 md:tw-w-28">
+          <img
+            class="tw-wconsull"
+            src="../assets/icons/Al_Rohim_logo.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- what masala offers -->
+
+      <div>
+        <!-- title -->
+        <h1 class="tw-text-center tw-font-bold tw-text-4xl">
+          What <span class="tw-text-[#B81E25]">Masala</span
+          ><span class="tw-text-[#21305A]">bazaar</span> Offers!
+        </h1>
+        <div class="tw-grid tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-4 tw-py-16">
+          <div
+            class="tw-flex tw-p-4 tw-justify-center tw-items-center tw-flex-col tw-drop-shadow-lg tw-rounded-md tw-bg-white"
+          >
+            <div>
+              <img
+                class="tw-wcons2"
+                src="../assets/icons/free-delivery 1.svg"
+                alt=""
+              />
+            </div>
+            <h2 class="tw-font-bold tw-text-xl tw-py-5">24/7 Support</h2>
+            <p class="tw-text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, impedit.
+            </p>
+          </div>
+          <div
+            class="tw-flex tw-p-4 tw-justify-center tw-items-center tw-flex-col tw-drop-shadow-lg tw-rounded-md tw-bg-white"
+          >
+            <div>
+              <img
+                class="tw-wcons2"
+                src="../assets/icons/cashback 1.svg"
+                alt=""
+              />
+            </div>
+            <h2 class="tw-font-bold tw-text-xl tw-py-5">24/7 Support</h2>
+            <p class="tw-text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, impedit.
+            </p>
+          </div>
+          <div
+            class="tw-flex tw-p-4 tw-justify-center tw-items-center tw-flex-col tw-drop-shadow-lg tw-rounded-md tw-bg-white"
+          >
+            <div>
+              <img
+                class="tw-w-12"
+                src="../assets/icons/premium-quality 1.svg"
+                alt=""
+              />
+            </div>
+            <h2 class="tw-font-bold tw-text-xl tw-py-5">24/7 Support</h2>
+            <p class="tw-text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, impedit.
+            </p>
+          </div>
+          <div
+            class="tw-flex tw-p-4 tw-justify-center tw-items-center tw-flex-col tw-drop-shadow-lg tw-rounded-md tw-bg-white"
+          >
+            <div>
+              <img
+                class="tw-w-12"
+                src="../assets/icons/24-hours-support 1.svg"
+                alt=""
+              />
+            </div>
+            <h2 class="tw-font-bold tw-text-xl tw-py-5">24/7 Support</h2>
+            <p class="tw-text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, impedit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------
           --- footer section ---
           --------------------->
 
-    <div class="tw-flex tablet:tw-flex-col tw-justify-between tw-pt-20">
-      <div>
-        <img src="../assets/images/mblogo.png" alt="" />
-        <h2 class="tw-text-[#585D69] tw-mt-4 tw-mb-3 tw-font-bold">
-          Payment Methods
-        </h2>
-        <div class="tw-grid tw-grid-cols-3 tw-gap-4 tw-w-1/2">
-          <img src="../assmagess/img/Payment Method.png" alt="" />
-          <img src="../assmagess/img/Payment Method (1).png" alt="" />
-          <img src="../assmagess/img/Payment Method (2).png" alt="" />
-          <img src="../assmagess/img/Payment Method (3).png" alt="" />
-          <img src="../assmagess/img/Payment Method (4).png" alt="" />
-          <img src="../assmagess/img/Payment Method (5).png" alt="" />
+      <div class="tw-flex tablet:tw-flex-col tw-justify-between tw-pt-20">
+        <div>
+          <img src="../assets/images/mblogo.png" alt="" />
+          <h2 class="tw-text-[#585D69] tw-mt-4 tw-mb-3 tw-font-bold">
+            Payment Methods
+          </h2>
+          <div class="tw-grid tw-grid-cols-3 tw-gap-4 tw-w-1/2">
+            <img src="../assmagess/img/Payment Method.png" alt="" />
+            <img src="../assmagess/img/Payment Method (1).png" alt="" />
+            <img src="../assmagess/img/Payment Method (2).png" alt="" />
+            <img src="../assmagess/img/Payment Method (3).png" alt="" />
+            <img src="../assmagess/img/Payment Method (4).png" alt="" />
+            <img src="../assmagess/img/Payment Method (5).png" alt="" />
+          </div>
+        </div>
+        <div class="tw-flex tw-flex-col tablet:tw-pl-10">
+          <p href="" class="tw-text-[#B81E25] tw-font-bold tablet:tw-mt-5">
+            About
+          </p>
+          <a href="">
+            <span>About </span
+            ><span class="tw-text-[#B81E25] tw-font-bold">Masala</span
+            ><span class="tw-text-[#21305A] tw-font-bold">Bazaar</span>
+          </a>
+          <a href="">How to Buy</a>
+          <a href="">Careers</a>
+          <a href="">Delivery options</a>
+          <a href="">Returns & Refunds</a>
+          <a href="">Forum</a>
+        </div>
+        <div class="tablet:tw-pl-10 tw-flex tw-flex-col">
+          <p href="" class="tw-text-[#B81E25] tw-font-bold tablet:tw-mt-5">
+            Support
+          </p>
+          <a href="">Help Center</a>
+          <a href="">Contact us</a>
+          <a href="">Privacy policy</a>
+          <a href="">Terms of service</a>
+          <a href="">Trust and safety</a>
+          <a href="">Accessibility</a>
+        </div>
+        <div class="tablet:tw-pl-10">
+          <h2 class="tw-text-[#B81E25] tw-font-bold tablet:tw-mt-5">Get app</h2>
+          <h2>Mobile site</h2>
+          <a href=""
+            ><img
+              class="tw-mages-8 tw-mb-5"
+              src="../assets/images/app store.png"
+              alt=""
+          /></a>
+          <a href=""><img src="../assets/images/google play.png" alt="" /></a>
         </div>
       </div>
-      <div class="tw-flex tw-flex-col tablet:tw-pl-10">
-        <p href="" class="tw-text-[#B81E25] tw-font-bold tablet:tw-mt-5">
-          About
-        </p>
-        <a href="">
-          <span>About </span
-          ><span class="tw-text-[#B81E25] tw-font-bold">Masala</span
-          ><span class="tw-text-[#21305A] tw-font-bold">Bazaar</span>
-        </a>
-        <a href="">How to Buy</a>
-        <a href="">Careers</a>
-        <a href="">Delivery options</a>
-        <a href="">Returns & Refunds</a>
-        <a href="">Forum</a>
-      </div>
-      <div class="tablet:tw-pl-10 tw-flex tw-flex-col">
-        <p href="" class="tw-text-[#B81E25] tw-font-bold tablet:tw-mt-5">
-          Support
-        </p>
-        <a href="">Help Center</a>
-        <a href="">Contact us</a>
-        <a href="">Privacy policy</a>
-        <a href="">Terms of service</a>
-        <a href="">Trust and safety</a>
-        <a href="">Accessibility</a>
-      </div>
-      <div class="tablet:tw-pl-10">
-        <h2 class="tw-text-[#B81E25] tw-font-bold tablet:tw-mt-5">Get app</h2>
-        <h2>Mobile site</h2>
-        <a href=""
-          ><img
-            class="tw-mages-8 tw-mb-5"
-            src="../assets/images/app store.png"
-            alt=""
-        /></a>
-        <a href=""><img src="../assets/images/google play.png" alt="" /></a>
+      <hr
+        class="tw-border-[1px] tw-text-[#585D69] tw-mt-6 tw-mb-4 tw-w-11/12 tw-mx-auto"
+      />
+      <!-- copyright section -->
+      <div
+        class="tw-flex mobile:tw-pl-10 mobile:tw-flex-col tw-justify-between tw-pb-4"
+      >
+        <div class="tw-flex">
+          <a href=""
+            ><img
+              class="tw-w-[20px] tw-h-[20px]"
+              src="../assets/images/path.png"
+              alt=""
+          /></a>
+          <a class="tw-mx-3" href=""
+            ><img
+              class="tw-w-[20px] tw-h-[20px]"
+              src="../assets/images/instagram.png"
+              alt=""
+          /></a>
+          <a href="">
+            <img
+              class="tw-w-[20px] tw-h-[20px]"
+              src="../assets/images/facebook.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <p class="mobile:tw-pt-4">&copy; MasalaBazaar incorporated</p>
       </div>
     </div>
-    <hr
-      class="tw-border-[1px] tw-text-[#585D69] tw-mt-6 tw-mb-4 tw-w-11/12 tw-mx-auto"
-    />
-    <!-- copyright section -->
-    <div
-      class="tw-flex mobile:tw-pl-10 mobile:tw-flex-col tw-justify-between tw-pb-4"
-    >
-      <div class="tw-flex">
-        <a href=""
-          ><img
-            class="tw-w-[20px] tw-h-[20px]"
-            src="../assets/images/path.png"
-            alt=""
-        /></a>
-        <a class="tw-mx-3" href=""
-          ><img
-            class="tw-w-[20px] tw-h-[20px]"
-            src="../assets/images/instagram.png"
-            alt=""
-        /></a>
-        <a href="">
-          <img
-            class="tw-w-[20px] tw-h-[20px]"
-            src="../assets/images/facebook.png"
-            alt=""
-          />
-        </a>
-      </div>
-      <p class="mobile:tw-pt-4">&copy; MasalaBazaar incorporated</p>
-    </div>
-  </div>
-  <!--------------------- 
+    <!--------------------- 
         bottom bar section 
       ---------------------->
-  <div class="tw-w-11/12 tw-mx-auto tw-relative sm:tw-hidden">
-    <img class="tw-w-full" src="../assets/images/bottom_bar.png" alt="" />
-    <!-- home icon -->
-    <div
-      class="tw-absolute tw-bottom-[2.5vh] tw-left-[5vw] tw-flex tw-items-center tw-flex-col"
-    >
-      <img
-        class="tw-text-indigo-900 tw-w-[5vw]"
-        src="../assets/icons/Home.svg"
-        alt=""
-      />
-      <h2 class="tw-font-bold tw-text-[3vw]">Home</h2>
-    </div>
-    <!-- inbox icon -->
-    <div
-      class="tw-absolute tw-bottom-[2.5vh] tw-left-[22vw] tw-flex tw-items-center tw-flex-col"
-    >
-      <img
-        class="tw-text-indigo-900 tw-w-[5vw]"
-        src="../assets/icons/Vector.svg"
-        alt=""
-      />
-      <h2 class="tw-font-bold tw-text-[3vw]">Inbox</h2>
-    </div>
-    <!-- search icon -->
-    <div
-      class="tw-absolute tw-bottom-[6vh] tw-left-[41vw] tw-flex tw-items-center tw-flex-col"
-    >
-      <img
-        class="tw-text-indigo-900 tw-w-[5vw]"
-        src="../assets/icons/search.svg"
-        alt=""
-      />
-      <h2 class="tw-font-bold tw-text-[3vw]">Search</h2>
-    </div>
-    <!-- cart icon -->
-    <div
-      class="tw-absolute tw-bottom-[2.5vh] tw-right-[22vw] tw-flex tw-items-center tw-flex-col"
-    >
-      <img
-        class="tw-text-indigo-900 tw-w-[5vw]"
-        src="../assets/icons/shopping-cart.svg"
-        alt=""
-      />
-      <h2 class="tw-font-bold tw-text-[3vw]">Cart</h2>
-    </div>
-    <!-- profile icon -->
-    <div
-      class="tw-absolute tw-bottom-[2.5vh] tw-right-[5vw] tw-flex tw-items-center tw-flex-col"
-    >
-      <img
-        class="tw-text-indigo-900 tw-w-[5vw]"
-        src="../assets/icons/image 1460.svg"
-        alt=""
-      />
-      <h2 class="tw-font-bold tw-text-[3vw]">Profile</h2>
+    <div class="tw-w-11/12 tw-mx-auto tw-relative sm:tw-hidden">
+      <img class="tw-w-full" src="../assets/images/bottom_bar.png" alt="" />
+      <!-- home icon -->
+      <div
+        class="tw-absolute tw-bottom-[2.5vh] tw-left-[5vw] tw-flex tw-items-center tw-flex-col"
+      >
+        <img
+          class="tw-text-indigo-900 tw-w-[5vw]"
+          src="../assets/icons/Home.svg"
+          alt=""
+        />
+        <h2 class="tw-font-bold tw-text-[3vw]">Home</h2>
+      </div>
+      <!-- inbox icon -->
+      <div
+        class="tw-absolute tw-bottom-[2.5vh] tw-left-[22vw] tw-flex tw-items-center tw-flex-col"
+      >
+        <img
+          class="tw-text-indigo-900 tw-w-[5vw]"
+          src="../assets/icons/Vector.svg"
+          alt=""
+        />
+        <h2 class="tw-font-bold tw-text-[3vw]">Inbox</h2>
+      </div>
+      <!-- search icon -->
+      <div
+        class="tw-absolute tw-bottom-[6vh] tw-left-[41vw] tw-flex tw-items-center tw-flex-col"
+      >
+        <img
+          class="tw-text-indigo-900 tw-w-[5vw]"
+          src="../assets/icons/search.svg"
+          alt=""
+        />
+        <h2 class="tw-font-bold tw-text-[3vw]">Search</h2>
+      </div>
+      <!-- cart icon -->
+      <div
+        class="tw-absolute tw-bottom-[2.5vh] tw-right-[22vw] tw-flex tw-items-center tw-flex-col"
+      >
+        <img
+          class="tw-text-indigo-900 tw-w-[5vw]"
+          src="../assets/icons/shopping-cart.svg"
+          alt=""
+        />
+        <h2 class="tw-font-bold tw-text-[3vw]">Cart</h2>
+      </div>
+      <!-- profile icon -->
+      <div
+        class="tw-absolute tw-bottom-[2.5vh] tw-right-[5vw] tw-flex tw-items-center tw-flex-col"
+      >
+        <img
+          class="tw-text-indigo-900 tw-w-[5vw]"
+          src="../assets/icons/image 1460.svg"
+          alt=""
+        />
+        <h2 class="tw-font-bold tw-text-[3vw]">Profile</h2>
+      </div>
     </div>
   </div>
-</div>
 
-<button class="tw-bg-red-500 tw-px-4 tw-py-3" (click)="handleHeroName()">
-  Click Me
-</button>
+  <button class="tw-bg-red-500 tw-px-4 tw-py-3" (click)="handleHeroName()">
+    Click Me
+  </button>
 
-<div class="tw-w-40 tw-bg-yellow-500 tw-h-40" *ngIf="hero; else not">
-  Sabbir
+  <div class="tw-w-40 tw-bg-yellow-500 tw-h-40" *ngIf="hero; else not">
+    Sabbir
+  </div>
+  <ng-template #not>
+    <p>Not Sabbir</p>
+  </ng-template>
 </div>
-<ng-template #not>
-  <p>Not Sabbir</p>
-</ng-template>
