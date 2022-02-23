@@ -65,7 +65,7 @@
           <div class="tw-flex tw-mb-4">
             <div
               class="tw-flex tw-items-center tw-justify-center tw-w-9 tw-rounded-br-3xl tw-rounded-r-md tw-rounded-b-md tw-h-9"
-              style="background-color: var(--navbar-icon-color)"
+              style="background-color: var(--primary-brand-color)"
             >
               <img
                 class="tw-w-5 tw-h-5"
@@ -74,7 +74,7 @@
             </div>
             <div
               class="tw-mx-7 tw-flex tw-items-center tw-justify-cent10 tw-w-9 tw-rounded-br-3xl tw-rounded-r-md tw-rounded-b-md tw-h-9"
-              style="background-color: var(--navbar-icon-color)"
+              style="background-color: var(--primary-brand-color)"
             >
               <img
                 class="tw-mx-auto tw-w-5 tw-h-5"
@@ -83,7 +83,7 @@
             </div>
             <div
               class="tw-flex tw-items-center tw-justify-center tw-w-9 tw-rounded-br-3xl tw-rounded-r-md tw-rounded-b-md tw-h-9"
-              style="background-color: var(--navbar-icon-color)"
+              style="background-color: var(--primary-brand-color)"
             >
               <img
                 class="tw-w-5 tw-h-5"
@@ -126,41 +126,41 @@
     </div>
   </div>
 
-  <!-- tab view navbar -->
-  <div class="tw-shadow-lg md:tw-hidden">
-    <div
-      class="tw-flex tw-justify-between tw-w-10/12 tw-mx-auto tw-h-14 tw-pt-2"
-    >
-      <div>
-        <img class="p-1 tw-w-11" src="../../assets/icons/mb.svg" alt="" />
-      </div>
-      <div class="tw-flex tw-flex-col">
+  <div class="bg-fruit tw-h-[210vh] tw-py-5 tw-relative tablet:tw-h-[170vh]">
+    <!-- tab view navbar -->
+    <div class="tw-shadow-lg md:tw-hidden">
+      <div
+        class="tw-flex tw-justify-between tw-w-10/12 tw-mx-auto tw-h-14 tw-pt-2"
+      >
         <div>
-          <P>&nbsp;</P>
+          <img class="p-1 tw-w-11" src="../../assets/icons/mb.svg" alt="" />
         </div>
-        <div class="tw-flex tw-items-center">
-          <img class="tw-w-5" src="../../assets/icons/map-pin.svg" alt="" />
-          <h2 class="tw-text-sm tw-mx-1">Mirpur Cantonment, Dhaka</h2>
-          <button type="button">
-            <img
-              class="tw-w-5"
-              src="../../assets/icons/chevron-down.svg"
-              alt=""
-            />
-          </button>
+        <div class="tw-flex tw-flex-col">
+          <div>
+            <P>&nbsp;</P>
+          </div>
+          <div class="tw-flex tw-items-center">
+            <img class="tw-w-5" src="../../assets/icons/map-pin.svg" alt="" />
+            <h2 class="tw-text-sm tw-mx-1">Mirpur Cantonment, Dhaka</h2>
+            <button type="button">
+              <img
+                class="tw-w-5"
+                src="../../assets/icons/chevron-down.svg"
+                alt=""
+              />
+            </button>
+          </div>
         </div>
-      </div>
-      <div>
-        <img src="../../assets/icons/bell.svg" alt="" />
+        <div>
+          <img src="../../assets/icons/bell.svg" alt="" />
+        </div>
       </div>
     </div>
-  </div>
-  <div class="bg-fruit tw-h-[210vh] tw-py-5 tw-relative">
     <!-------------------- 
       top banner section
     ---------------------->
     <div
-      class="tw-grid tw-h-[70vh] tw-w-10/12 tw-grid-cols-5 tw-grid-rows-2 tw-gap-4 tw-mx-auto"
+      class="tw-grid tw-h-[70vh] tw-w-10/12 tw-grid-cols-5 tw-grid-rows-2 tw-gap-4 tw-mx-auto tablet:tw-hidden"
     >
       <!-- left slide -->
       <div
@@ -178,10 +178,9 @@
           <p
             class="tw-pl-10 tw-pr-5 tw-text-sm xl:tw-text-[1.2rem] tw-pt-4 tw-text-white"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dicta
-            nihil vitae obcaecati. At commodi, quaerat harum autem, officiis
-            nostrum vitae libero, qui alias cum error ipsa consequatur repellat
-            rerum.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            fugit repellendus exercitationem reprehenderit, quisquam hic
+            molestias!
           </p>
         </div>
         <!-- first pic -->
@@ -227,7 +226,6 @@
           <p class="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
             Dicta libero impedit et ducimus, <br />
-            laborum magni repellendus obcaecati odio vero illo?
           </p>
         </div>
       </div>
@@ -267,19 +265,100 @@
       </div>
     </div>
 
+    <!-- tab: top banner section -->
+    <div class="tw-mt-12 md:tw-hidden">
+      <!-- swiper -->
+      <swiper
+        #swiperVirtualRef
+        [slidesPerView]="1"
+        [spaceBetween]="50"
+        [centeredSlides]="false"
+        class="mySwiper1 tw-p-12"
+        id="mySwiperID"
+      >
+        <ng-template swiperSlide>
+          <div
+            class="tw-h-[35vh] tw-drop-shadow-lg tw-rounded-2xl tw-text-white showcase-card-bg"
+          >
+            <div
+              class="tw-relative tw-h-full tw-w-1/2 tw-rounded-tl-2xl tw-rounded-bl-2xl tw-rounded-r-[150px]"
+              style="background-color: var(--offers-color)"
+            >
+              <h2
+                class="tw-absolute tw-text-xl tw-font-bold tw-top-8 tw-left-4 tw-w-[80%] mobile:tw-w-[85%] mobile:tw-text-base mini:tw-text-sm"
+              >
+                পদ্মার ইলিশ এখন আপনার হাতের পাশে...
+              </h2>
+              <p
+                class="tw-absolute tw-top-28 tw-left-4 mobile:tw-top-24 mini:tw-top-20"
+              >
+                12th Apr- 20th jun
+              </p>
+              <a
+                href=""
+                class="tw-py-2 tw-px-8 tw-rounded-lg tw-absolute tw-bottom-4 tw-left-16 mobile:tw-px-4 mobile:tw-left-12 mobile:tw-bottom-8 mini:tw-bottom-12"
+                style="background-color: var(--primary-brand-color)"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div
+            class="tw-h-[35vh] tw-drop-shadow-lg tw-rounded-2xl tw-text-white showcase-card-bg"
+          >
+            <div
+              class="tw-relative tw-h-full tw-w-1/2 tw-rounded-tl-2xl tw-rounded-bl-2xl tw-rounded-r-[150px]"
+              style="background-color: var(--secondary-brand-color)"
+            >
+              <h2
+                class="tw-absolute tw-text-xl tw-font-bold tw-top-8 tw-left-4 tw-w-[80%] mobile:tw-w-[85%] mobile:tw-text-base mini:tw-text-sm"
+              >
+                All Snacks up to 70% Discount
+              </h2>
+              <p
+                class="tw-absolute tw-top-28 tw-left-4 mobile:tw-top-24 mini:tw-top-20"
+              >
+                12th Apr- 20th jun
+              </p>
+              <a
+                href=""
+                class="tw-py-2 tw-px-8 tw-rounded-lg tw-absolute tw-bottom-4 tw-left-16 mobile:tw-px-4 mobile:tw-left-12 mobile:tw-bottom-8 mini:tw-bottom-12"
+                style="background-color: var(--primary-brand-color)"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+
     <!-- category section -->
     <div class="tw-w-10/12 tw-mx-auto tw-text-2xl tw-mt-14">
-      <h1
-        class="tw-font-bold tw-text-3xl"
-        style="color: var(--secondary-brand-color)"
-      >
-        Shop By Categories
-      </h1>
+      <div class="tw-flex tw-justify-between tw-mb-6 tw-items-center">
+        <h1
+          class="tw-font-bold tw-text-3xl"
+          style="color: var(--secondary-brand-color)"
+        >
+          Shop By Categories
+        </h1>
+        <!-- see all button -->
+        <div
+          class="tw-flex tw-text-base tw-justify-end tw-underline md:tw-hidden"
+        >
+          <a href="" class="" style="color: var(--primary-brand-color)"
+            >See All</a
+          >
+        </div>
+      </div>
+
       <!-- see all button -->
       <div
-        class="tw-flex tw-justify-end tw-underline tw-mt-6 tw-text-base tw-hidden"
+        class="tw-flex tw-justify-end tw-underline tw-mt-6 tw-text-base tablet:tw-hidden"
       >
-        <a href="" class="" style="color: var(--navbar-icon-color)">See All</a>
+        <a href="" class="" style="color: var(--primary-brand-color)"
+          >See All</a
+        >
       </div>
       <!-- swiper -->
       <div class="tw-mt-12">
@@ -386,15 +465,23 @@
 
     <!-- Latest Products -->
     <div class="tw-w-10/12 tw-mx-auto tw-pt-10">
-      <h1
-        class="tw-font-bold tw-text-3xl"
-        style="color: var(--secondary-brand-color)"
-      >
-        Latest Products
-      </h1>
+      <div class="tw-flex tw-justify-between tw-mb-6 tw-items-center">
+        <h1
+          class="tw-font-bold tw-text-3xl"
+          style="color: var(--secondary-brand-color)"
+        >
+          Latest Products
+        </h1>
+        <!-- see all button -->
+        <div class="tw-flex tw-justify-end tw-underline md:tw-hidden">
+          <a href="" class="" style="color: var(--primary-brand-color)"
+            >See All</a
+          >
+        </div>
+      </div>
 
       <!-- button-group -->
-      <div class="tw-my-4 tw-font-semibold tw-mt-10">
+      <div class="tw-my-4 tw-font-semibold tw-mt-10 tablet:tw-hidden">
         <ul>
           <a
             href=""
@@ -420,8 +507,10 @@
       </div>
 
       <!-- see all button -->
-      <div class="tw-flex tw-justify-end tw-underline tw-mt-6">
-        <a href="" class="" style="color: var(--navbar-icon-color)">See All</a>
+      <div class="tw-flex tw-justify-end tw-underline tw-mt-6 tablet:tw-hidden">
+        <a href="" class="" style="color: var(--primary-brand-color)"
+          >See All</a
+        >
       </div>
       <!-- card-group -->
       <app-navbar></app-navbar>
@@ -466,32 +555,32 @@
         <ul class="tw-flex tw-justify-end">
           <span
             class="tw-flex tw-items-center tw-text-lg"
-            style="color: var(--navbar-icon-color)"
+            style="color: var(--primary-brand-color)"
           >
             <p class="tw-font-semibold">Hurry Up!</p>
             <p class="tw-mx-2">Offer ends in:</p>
           </span>
           <p
             class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
-            style="background-color: var(--navbar-icon-color)"
+            style="background-color: var(--primary-brand-color)"
           >
             <strong>15</strong>&nbsp;<small>days</small>
           </p>
           <p
             class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
-            style="background-color: var(--navbar-icon-color)"
+            style="background-color: var(--primary-brand-color)"
           >
             <strong>05</strong>&nbsp;<small>hours</small>
           </p>
           <p
             class="tw-px-5 tw-py-2 tw-mr-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
-            style="background-color: var(--navbar-icon-color)"
+            style="background-color: var(--primary-brand-color)"
           >
             <strong>25</strong>&nbsp;<small>minutes</small>
           </p>
           <p
             class="tw-px-5 tw-py-2 tw-rounded-lg hover:tw-bg-yellow-400 tw-text-white"
-            style="background-color: var(--navbar-icon-color)"
+            style="background-color: var(--primary-brand-color)"
           >
             <strong>25</strong>&nbsp;<small>seconds</small>
           </p>
@@ -500,7 +589,9 @@
 
       <!-- see all button -->
       <div class="tw-flex tw-justify-end tw-underline tw-mt-6">
-        <a href="" class="" style="color: var(--navbar-icon-color)">See All</a>
+        <a href="" class="" style="color: var(--primary-brand-color)"
+          >See All</a
+        >
       </div>
       <!-- card-group -->
       <app-navbar></app-navbar>
@@ -549,7 +640,7 @@
             </div>
             <!-- price -->
             <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
-              <div class="" style="color: var(--navbar-icon-color)">
+              <div class="" style="color: var(--primary-brand-color)">
                 <span class="tw-text">Tk-200/</span
                 ><span class="tw-mr-2">kg</span>
               </div>
@@ -626,7 +717,7 @@
             </div>
             <!-- price -->
             <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
-              <div class="" style="color: var(--navbar-icon-color)">
+              <div class="" style="color: var(--primary-brand-color)">
                 <span class="tw-text">Tk-200/</span
                 ><span class="tw-mr-2">kg</span>
               </div>
@@ -703,7 +794,7 @@
             </div>
             <!-- price -->
             <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
-              <div class="" style="color: var(--navbar-icon-color)">
+              <div class="" style="color: var(--primary-brand-color)">
                 <span class="tw-text">Tk-200/</span
                 ><span class="tw-mr-2">kg</span>
               </div>
@@ -780,7 +871,7 @@
             </div>
             <!-- price -->
             <div class="tw-flex tw-text-xs tw-ml-2 tw-justify-center">
-              <div class="" style="color: var(--navbar-icon-color)">
+              <div class="" style="color: var(--primary-brand-color)">
                 <span class="tw-text">Tk-200/</span
                 ><span class="tw-mr-2">kg</span>
               </div>
@@ -926,7 +1017,9 @@
 
       <!-- see all button -->
       <div class="tw-flex tw-justify-end tw-underline tw-mt-6">
-        <a href="" class="" style="color: var(--navbar-icon-color)">See All</a>
+        <a href="" class="" style="color: var(--primary-brand-color)"
+          >See All</a
+        >
       </div>
       <!-- card-group -->
       <app-navbar></app-navbar>
@@ -1180,14 +1273,3 @@
     </div>
   </div>
 </div>
-
-<button class="tw-bg-red-500 tw-px-4 tw-py-3" (click)="handleHeroName()">
-  Click Me
-</button>
-
-<div class="tw-w-40 tw-bg-yellow-500 tw-h-40" *ngIf="hero; else not">
-  Sabbir
-</div>
-<ng-template #not>
-  <p>Not Sabbir</p>
-</ng-template>
